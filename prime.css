@@ -1,0 +1,49 @@
+body { background-color: black;
+            color: white;
+           font-family: Arial, Helvetica, sans-serif;
+              }
+h2{background-color: #1E90FF;
+            color: white;  }
+h3{background-color:black;
+      color:white; }
+dd {font-style:italic; 
+       font-size:.90em;
+       line-height:200%; }
+
+.contact { font-family: "Times New Roman", serif;
+                font-size: .90em;
+                font-weight:bold; }
+#nav { font-weight:bold;
+        font-size: .70em; }
+#footer { font-size: .80em;
+          font-style: italic;
+          position: absolute;
+            bottom: 10px;
+            left: 625px; }
+#connexion{background-color: #1E90FF;
+            color: white; 
+            position: absolute;
+            right: 225px;
+            bottom: 175px;
+            padding: 50px; }
+
+#inscription{background-color: #1E90FF;
+            color: white; 
+            position: absolute;
+            left: 225px;
+            bottom: 175px;
+            padding: 50px; }
+#logo{
+          position: absolute;
+            left: 625px;
+            bottom: 400px;
+
+
+
+}
+img{border: 0;}
+.property {
+    padding-right: 30px;
+    padding-top: 5px;
+
+}
