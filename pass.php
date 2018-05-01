@@ -10,10 +10,9 @@ $connection = true;
 }
 
 if($connection) {
-echo "Connexion okay.";
 header("Location:main.html");
 }
 else {
-echo "Connexion refusée.";
+header("Location:connexion.html");
 }
 ?>
