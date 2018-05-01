@@ -19,7 +19,7 @@ dd {font-style:italic;
           font-style: italic;
           position: absolute;
             bottom: 10px;
-            left: 625px; }
+            left: 650px; }
 #connexion{background-color: #1E90FF;
             color: white; 
             position: absolute;
@@ -35,13 +35,14 @@ dd {font-style:italic;
             padding: 50px; }
 #logo{
           position: absolute;
-            left: 625px;
-            bottom: 400px;
+            left: 575px;
+            bottom: 350px;
 
 
 
 }
 img{border: 0;}
+
 .property {
     padding-right: 30px;
     padding-top: 5px;
