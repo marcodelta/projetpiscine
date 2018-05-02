@@ -1,13 +1,82 @@
 body { background-color: white;
             color: black;
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            top: 0px;
+            left: 0px;
            font-family: Arial, Helvetica, sans-serif;
               }
 
-#buttoncolumn{background-color: black;
+#buttoncolumn{
+	background-color: black;
+	 position: absolute;
+	 		min-width: 100%;
+	 		max-width: 100%;
+	 		top: 0px;
+	 		left: 0px;
+	 		height: 200px;
             color: white;   }
 
-a{margin: 10px;}
+a{margin: 3%;}
 
 img{border: 0;
-	margin-right:60px;}
+	}
 
+  .gwd-p-13zt {
+      position: absolute;
+      left: 0px;
+      top: 95px;
+      right:0px;
+      height: 650px;
+      width: 100%;
+      transform-origin: 569px 287.85px 0px;
+      background-image: none;
+      background-color: rgb(84, 107, 188);
+    }
+    .gwd-rect-1b1l {
+      position: absolute;
+      width: 300px;
+      height: 550px;
+      left: 46.8728px;
+      top: 128.131px;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      border-radius: 15pt;
+    }
+    .gwd-rect-1rd7 {
+      position: absolute;
+      width: 462.502px;
+      height: 88px;
+      left: 381.496px;
+      top: 125.006px;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      border-radius: 15px;
+    }
+    .gwd-rect-137l {
+      position: absolute;
+      width: 192.994px;
+      height: 36px;
+      left: 913.991px;
+      top: 137.006px;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      border-radius: 15px;
+    }
+#footer {background-color: rgb(84, 107, 188);
+		 font-size: .80em;
+          font-style: italic;
+          position: absolute;
+            bottom: 0px;
+            left: 650px;
+            height:15px; }
