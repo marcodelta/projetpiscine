@@ -49,10 +49,10 @@ img{border: 0;
     }
     .gwd-rect-1rd7 {
       position: absolute;
-      width: 462.502px;
-      height: 88px;
+      width: 460px;
+      height: 380px;
       left: 381.496px;
-      top: 125.006px;
+      top: 300px;
       box-sizing: border-box;
       border-width: 1px;
       border-style: solid;
@@ -60,7 +60,8 @@ img{border: 0;
       background-color: rgb(255, 255, 255);
       border-radius: 15px;
     }
-    .gwd-rect-137l {
+
+    #RechercheContact{
       position: absolute;
       width: 192.994px;
       height: 36px;
@@ -73,6 +74,22 @@ img{border: 0;
       background-color: rgb(255, 255, 255);
       border-radius: 15px;
     }
+
+     #maRecherche{
+      position: absolute;
+      width: 460px;
+      height: 50px;
+      left: 381px;
+      top: 137.006px;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      border-radius: 15px;
+      padding: 10px;
+    }
+
 #footer {background-color: rgb(84, 107, 188);
 		 font-size: .80em;
           font-style: italic;
@@ -80,3 +97,37 @@ img{border: 0;
             bottom: 0px;
             left: 650px;
             height:15px; }
+.button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+#document{
+         position: absolute;
+      left: 380px;
+      top: 100px;
+      border-radius: 15px;
+      padding: 10px;
+}
+
+#photo{
+       position: absolute;
+      left: 550px;
+      top: 100px;
+      border-radius: 15px;
+      padding: 10px;
+}
+#video{
+          position: absolute;
+      left: 700px;
+      top: 100px;
+      border-radius: 15px;
+      padding: 10px;
+   }
+
