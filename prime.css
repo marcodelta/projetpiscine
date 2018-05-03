@@ -2,47 +2,79 @@ body { background-color: black;
             color: white;
            font-family: Arial, Helvetica, sans-serif;
               }
-h2{background-color: #1E90FF;
-            color: white;  }
+h2{background-color: #0000CD;
+            color: white;
+            position: absolute;
+            left: 200px;
+            top:100px;}
 h3{background-color:black;
       color:white; }
 dd {font-style:italic; 
        font-size:.90em;
        line-height:200%; }
 
-.contact { font-family: "Times New Roman", serif;
-                font-size: .90em;
-                font-weight:bold; }
-#nav { font-weight:bold;
+.contact {  font-family: "Times New Roman", serif;
+            font-size: .90em;
+            font-weight:bold; }
+
+#nav {  font-weight:bold;
         font-size: .70em; }
+
+#texte {  font-weight:bold;
+          font-size: 1.00em;
+          position: absolute;
+          left: 80px;
+          top:300px; }
+
+#titreinscription { font-weight:bold;
+                    font-size: 2.00em;
+                    position: absolute;
+                    left: 700px;
+                    top:70px; }
+
+#champ1 { font-size: 1.00em;
+          position: absolute;
+          left: 160px;
+          top:300px;
+          width:700px;
+          height:300px; }
+
+
 #footer { font-size: .80em;
           font-style: italic;
           position: absolute;
-            bottom: 10px;
-            left: 650px; }
-#connexion{background-color: #1E90FF;
-            color: white; 
-            position: absolute;
-            right: 225px;
-            bottom: 175px;
-            padding: 50px; }
+          bottom: 10px;
+          left: 50px; }
 
-#inscription{background-color: #1E90FF;
+#connexion{ background-color: #0000CD;
             color: white; 
             position: absolute;
-            left: 225px;
-            top:25px;
-            padding: 50px; }
-#logo{
+            right: 100px;
+            bottom: 0px;
+            padding: 190px; }
+
+#inscription{ background-color: #0000CD;
+              color: white; 
+              position: absolute;
+              left: 50px;
+              top:210px;
+              padding: 50px;
+              width:1000px;
+              height:280px; }
+#logo1{
           position: absolute;
-            left: 550px;
-            bottom: 350px;
-}
+            left: 80px;
+            bottom: 380px;}
+
+#logo2{
+          position: absolute;
+          left: 50px;
+          bottom: 400px;}
 
 img{border: 0;}
 
 .property {
-    padding-right: 30px;
+    padding-right: 50px;
     padding-top: 5px;
 
 }

@@ -1,4 +1,13 @@
 <?php
+
+session_start();
+/*session is started if you don't write this line can't use $_Session  global variable*/
+$_SESSION['ID']=1;
+
+?>
+
+<?php
+
 //identifier le nom de base de données
  $database = "net4work";
 //connecter l'utilisateur dans BDD
@@ -21,9 +30,13 @@
 	$reponse = mysqli_query($db_handle,$sql);
 	$data = mysqli_fetch_assoc($reponse);
 	
-	echo $sql;
 
 	if($data['motdepasse'] == $pass){
+
+		$sql = "SELECT iduser FROM connection WHERE email LIKE '".$login."'";
+		$requete = mysqli_query($db_handle,$sql);
+		$data = mysqli_fetch_assoc($requete);
+		$_SESSION['ID']=$data['iduser'];
 		header("Location:main.html");
 	}
 	else {
