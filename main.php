@@ -69,21 +69,15 @@ mysqli_close($db_handle);
   <svg data-gwd-shape="rectangle" class="gwd-rect-137l"></svg>
  
 
-<<<<<<< HEAD:main.html
   	<input type="button" name="document">Document</input>
 
     <input type="search" id="RechercheContact" class="search" name="q"
     placeholder="Rechercher un contact..." required > 
 
-    <input type="search" id="maRecherche" class="search" name="q"
-    placeholder="Exprimez vous...." required >
-
-=======
     <input type="search" id="maRecherche" class="search" name="q2"
     placeholder="Exprimez vous...">
->>>>>>> d3909c21fdebaba4b487c2d238efa9f6ebea1d9e:main.php
 
-    <td colspan="2"><input type="submit" value="Search" class="recherche">
+  <td colspan="2"><input type="submit" value="Search" class="recherche">
 
     <span class="validity"></span>
 
