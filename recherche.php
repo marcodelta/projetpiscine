@@ -1,7 +1,4 @@
 <?php
-
-$search = isset($_POST["q"])?$_POST["q"] : "";
-
 if($search!= NULL) // on vérifie d'abord l'existence du POST et aussi si la requete n'est pas vide.
 {
 $database = "net4work";
