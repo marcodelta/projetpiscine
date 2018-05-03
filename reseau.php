@@ -15,9 +15,8 @@
   $sql = "SELECT idami FROM amis WHERE iduser LIKE '".$_SESSION['ID']."' ";
   $requete = mysqli_query($db_handle,$sql);
   $data = mysqli_fetch_assoc($requete);
-<<<<<<< HEAD
   }
-=======
+
   $numero = sizeof($data['idami']);
     for($i = 0; $i<$numero; $i++)
     {
@@ -27,7 +26,6 @@
     }
 
 }
->>>>>>> 06928141122c4b151dd1e333f78769c286fe292b
 
 
 
@@ -41,14 +39,12 @@ mysqli_close($db_handle);
 ?>
 
 
-
-
 <!DOCTYPE html>
 <!-- Sources:  -->
 <html>
 <head>
 
-	<title>Mon Réseau</title>
+  <title>Mon Réseau</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="myScript.js">
