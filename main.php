@@ -1,3 +1,33 @@
+<?php
+  session_start();
+?>
+
+<?php
+$notif = isset($_POST["q2"]) ? $_POST["q2"] : "";
+$database = "net4work";
+//connecter l'utilisateur dans BDD
+//votre serveur = localhost | votre login = root | votre mot de pass = ‘’ (rien)
+ $db_handle = mysqli_connect('localhost', 'root', '');
+ $db_found = mysqli_select_db($db_handle, $database);
+ //si la BDD existe, faire le traitement
+ 
+
+ if ($db_found) { 
+  $sql = "INSERT INTO notification(descriptionnotif) VALUES '". $notif ."' ";
+  $requete = mysqli_query($db_handle,$sql);
+  $data = mysqli_fetch_assoc($requete);
+
+  $notif = $data['q2'];
+
+  }
+else {
+  echo "Database not found";
+ }//end else
+//fermer la connection
+mysqli_close($db_handle); 
+
+?>
+
 <!DOCTYPE html>
 <!-- Sources:  -->
 <html>
@@ -37,7 +67,9 @@
 
   <svg data-gwd-shape="rectangle" class="gwd-rect-1rd7"></svg>
   <svg data-gwd-shape="rectangle" class="gwd-rect-137l"></svg>
+ 
 
+<<<<<<< HEAD:main.html
   	<input type="button" name="document">Document</input>
 
     <input type="search" id="RechercheContact" class="search" name="q"
@@ -46,9 +78,17 @@
     <input type="search" id="maRecherche" class="search" name="q"
     placeholder="Exprimez vous...." required >
 
+=======
+    <input type="search" id="maRecherche" class="search" name="q2"
+    placeholder="Exprimez vous...">
+>>>>>>> d3909c21fdebaba4b487c2d238efa9f6ebea1d9e:main.php
 
+    <td colspan="2"><input type="submit" value="Search" class="recherche">
 
     <span class="validity"></span>
+
+            <input type="search" id="RechercheContact" class="search" name="q"
+    placeholder="Rechercher un contact" required >
 
      <h1 class="gwd-p-bdbp"><br class="">Marc Rahbani</h1>
        <span class="gwd-span-1iq8"><br class="">Mes messages</span>
