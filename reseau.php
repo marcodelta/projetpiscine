@@ -1,3 +1,36 @@
+<?php
+  session_start();
+?>
+
+<?php
+  $database = "net4work";
+//connecter l'utilisateur dans BDD
+//votre serveur = localhost | votre login = root | votre mot de pass = ‘’ (rien)
+ $db_handle = mysqli_connect('localhost', 'root', '');
+ $db_found = mysqli_select_db($db_handle, $database);
+ //si la BDD existe, faire le traitement
+ 
+
+ if ($db_found) { 
+  $sql = "SELECT idami FROM amis WHERE iduser LIKE '".$_SESSION['ID']."' ";
+  $requete = mysqli_query($db_handle,$sql);
+  $data = mysqli_fetch_assoc($requete);
+  for()
+
+
+
+
+  else {
+  echo "Database not found";
+ }//end else
+//fermer la connection
+mysqli_close($db_handle); 
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <!-- Sources:  -->
 <html>

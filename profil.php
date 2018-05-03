@@ -67,7 +67,7 @@ mysqli_close($db_handle);
   <strong class="gwd-span-45s9"> Mes photos</strong>
   <strong class="gwd-strong-1tex">Mes vidéos</strong>
   <strong class="gwd-strong-kwsw"><?php echo $name ?><br>
-  <span class="gwd-span-hb4w"><?php $poste, " à ", $entreprise ?><br>Bonjour!<br><br><br><br><br><br><br><br><br></span>
+  <span class="gwd-span-hb4w"><?php echo $poste, " à ", $entreprise ?><br>Bonjour!<br><br><br><br><br><br><br><br><br></span>
   <span class="gwd-span-1e6n">Pour me contacter :<br>Par email:<br><br><br></span></strong>
   <strong class="gwd-strong-12j0">Mon activité</strong>
 
