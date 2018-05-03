@@ -57,12 +57,13 @@ mysqli_close($db_handle);
     <a href="emplois.html"><img id="image5" src="emplois.png" alt="Emplois" width="98" height="57" onmouseenter ="changeImage6(this)"/></a>
 
    </div>
-   
+
    <form action="cible_envoi.php" method="post" enctype="multipart/form-data">
    <p class="gwd-p-13zt"><br> 
         <input type="file" name="monfichier" id="document" /><br />
-        <input type="submit" class="button" id="envoyer" />
-        <embed name="mon fichier" class="pdf" width=300 height=300 type='application/pdf'/>
+        <input type="submit" class="staiv" id="send" />
+   <!--     <embed name="mon fichier" class="pdf" width=300 height=300 type='application/pdf'/>-->
+    
   </p>
   </form>
 
@@ -73,11 +74,11 @@ mysqli_close($db_handle);
     <input type="search" id="maRecherche" class="search" name="q2"
     placeholder="Exprimez vous..." >
 
-  <td colspan="2"><input type="submit" value="Envoyer" class="recherche">
+ 
 
   <input type="search" id="RechercheContact" class="search" name="q"
-    placeholder="Rechercher un contact..." required >
-
+    placeholder="Rechercher un contact..."  >
+    <td colspan="2"><input type="submit" value="Envoyer" class="recherche">
        <span class="gwd-span-1iq8"><br class="">Mes messages</span>
 
  <div id="footer">Copyright &copy; 2018 net4work Properties<br/>

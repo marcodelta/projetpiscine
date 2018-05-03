@@ -338,10 +338,10 @@ img{border: 0;
 
     .recherche{
      position: absolute;
-      width: 70px;
+      width: 100px;
       height: 40px;
-      left: 1075px;
-      top: 180px;
+      left: 1200px;
+      top: 135px;
       background-color: rgb(169, 196, 235);
       border-color: rgb(169, 196, 235);
       border-radius: 10px;
@@ -356,4 +356,18 @@ img{border: 0;
       font-family: Arial;
       font-weight:bold;
       color: rgb(83, 137, 214);
+    }
+
+    .staiv{
+
+       position: absolute;
+      left:700px;
+      top:100px;
+      height: 35px;
+      width: 250px;
+     text-align: center;
+       background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
+      padding: 10px;
     }
