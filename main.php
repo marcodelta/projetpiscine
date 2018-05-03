@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!-- Sources:  -->
 <html>
@@ -43,8 +44,8 @@
     <input type="search" id="RechercheContact" class="search" name="q"
     placeholder="Rechercher un contact" required > 
 
-    <input type="search" id="maRecherche" class="search" name="q"
-    placeholder="Exprimez vous...." required >
+    <input type="search" id="maRecherche" class="search" name="q2"
+    placeholder="Exprimez vous..." required >
 
 
 
