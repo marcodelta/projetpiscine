@@ -58,8 +58,11 @@ mysqli_close($db_handle);
 
    </div>
 
-   <p class="gwd-p-13zt"><br> 
-        <input type="file" name="monfichier" id="document" /><br />
+   <p class="gwd-p-13zt"></p>
+   <p class="gwd-p-73zt">
+        <input type="file" name="monfichier" id="document" />
+  </p>
+  <p class="gwd-p-63zt">
         <input type="submit" class="button" id="envoyer" />
   </p>
 

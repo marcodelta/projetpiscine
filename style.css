@@ -25,6 +25,29 @@ img{border: 0;
       background-color: rgb(83, 137, 214);
     }
 
+    .gwd-p-63zt {
+      position: absolute;
+      left: 690px;
+      top: 190px;
+      right:0px;
+      height: 100px;
+      width: 100px;
+      background-image: none;
+      background-color: rgb(83, 137, 214);
+      border-color :red;
+    }
+    .gwd-p-73zt {
+      position: absolute;
+      left: 0px;
+      top: 95px;
+      right:0px;
+      height: 100px;
+      width: 100px;
+      background-image: none;
+      background-color: rgb(83, 137, 214);
+      border-color :red;
+    }
+
     .gwd-rect-1rd7 {
       background-color: rgb(169, 196, 235);
       position: absolute;
@@ -43,7 +66,7 @@ img{border: 0;
       position: absolute;
       width: 250px;
       height: 36px;
-      left: 1000px;
+      left: 910px;
       top: 137.006px;
       box-sizing: border-box;
       border-width: 1px;
@@ -114,29 +137,25 @@ img{border: 0;
          position: absolute;
       left: 405px;
       top: 100px;
-      border-radius: 15px;
+      border-radius: 10px;
       padding: 10px;
-      color: rgb(20, 34, 221);
-      background-image: none;
-     background-color: rgb(146, 211, 234);
 }
-#envoyer{
-           position: absolute;
-      width: 200px;
-      height: 50px;
-      font-family: Arial;
-      font-weight:bold;
-      font-size: 15px;
-      text-align: center;
-      color: rgb(20, 34, 221);
-     background-color: rgb(146, 211, 234);
-      border-style: groove;
-       position: absolute;
-      left: 700px;
-      top: 100px;
-      border-radius: 15px;
 
+#photo{
+       position: absolute;
+      left: 600px;
+      top: 100px;
+      border-radius: 10px;
+      padding: 10px;
 }
+#video{
+          position: absolute;
+      left: 785px;
+      top: 100px;
+      border-radius: 10px;
+      padding: 10px;
+   }
+
 
        .gwd-span-1iq8 {
        position: absolute;
@@ -320,10 +339,15 @@ img{border: 0;
     .recherche{
      position: absolute;
       width: 70px;
-      height: 50px;
-      left: 900px;
-      top: 137.006px;
-      background-color: rgb(255, 255, 255);
-      border-radius: 15px;
+      height: 40px;
+      left: 1075px;
+      top: 180px;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
       padding: 10px;
+      border-style: solid;
+      font-family: Arial;
+      font-weight:bold;
+      color: rgb(83, 137, 214);
     }
