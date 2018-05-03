@@ -31,14 +31,14 @@ dd {font-style:italic;
             color: white; 
             position: absolute;
             left: 225px;
-            bottom: 175px;
+            top:25px;
             padding: 50px; }
 #logo{
           position: absolute;
-            left: 575px;
+            left: 635px;
             bottom: 350px;
-
 }
+
 img{border: 0;}
 
 .property {

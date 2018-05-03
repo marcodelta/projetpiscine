@@ -28,31 +28,18 @@ img{border: 0;
       left: 0px;
       top: 95px;
       right:0px;
-      height: 650px;
+      height: 674px;
       width: 100%;
-      transform-origin: 569px 287.85px 0px;
       background-image: none;
       background-color: rgb(84, 107, 188);
     }
-    .gwd-rect-1b1l {
-      position: absolute;
-      width: 300px;
-      height: 550px;
-      left: 46.8728px;
-      top: 128.131px;
-      box-sizing: border-box;
-      border-width: 1px;
-      border-style: solid;
-      border-color: rgb(0, 0, 0);
-      background-color: rgb(255, 255, 255);
-      border-radius: 15pt;
-    }
+
     .gwd-rect-1rd7 {
       position: absolute;
-      width: 462.502px;
-      height: 88px;
-      left: 381.496px;
-      top: 125.006px;
+      width: 460px;
+      height: 380px;
+      left: 600px;
+      top: 300px;
       box-sizing: border-box;
       border-width: 1px;
       border-style: solid;
@@ -60,11 +47,12 @@ img{border: 0;
       background-color: rgb(255, 255, 255);
       border-radius: 15px;
     }
-    .gwd-rect-137l {
+
+    #RechercheContact{
       position: absolute;
       width: 192.994px;
       height: 36px;
-      left: 913.991px;
+      left: 1300px;
       top: 137.006px;
       box-sizing: border-box;
       border-width: 1px;
@@ -73,6 +61,22 @@ img{border: 0;
       background-color: rgb(255, 255, 255);
       border-radius: 15px;
     }
+
+     #maRecherche{
+      position: absolute;
+      width: 460px;
+      height: 50px;
+      left: 600px;
+      top: 137.006px;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      border-radius: 15px;
+      padding: 10px;
+    }
+
 #footer {background-color: rgb(84, 107, 188);
 		 font-size: .80em;
           font-style: italic;
@@ -80,3 +84,138 @@ img{border: 0;
             bottom: 0px;
             left: 650px;
             height:15px; }
+.button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+#document{
+         position: absolute;
+      left: 600px;
+      top: 100px;
+      border-radius: 15px;
+      padding: 10px;
+}
+
+#photo{
+       position: absolute;
+      left: 800px;
+      top: 100px;
+      border-radius: 15px;
+      padding: 10px;
+}
+#video{
+          position: absolute;
+      left: 975px;
+      top: 100px;
+      border-radius: 15px;
+      padding: 10px;
+   }
+
+    .gwd-p-bdbp {
+      position: absolute;
+      width: 300px;
+      height: 143px;
+      left: 46.8728px;
+      top: 128.131px;
+      transform-origin: 198.5px 290.138px 0px;
+      font-family: Georgia;
+      font-weight: normal;
+      text-align: center;
+      background-image: none;
+      background-color: rgb(146, 211, 234);
+      border-style: groove;
+      border-radius: 15px;
+    }
+
+       .gwd-span-1iq8 {
+       position: absolute;
+      width: 300px;
+      height: 400px;
+      left: 46.8728px;
+      top: 300px;
+      text-align: center;
+      font-family: Georgia;
+      font-size: 32px;
+      background-image: none;
+      background-color: rgb(146, 211, 234);
+      border-style: groove;
+      border-radius: 15px;
+    }
+    .gwd-span-14na {
+      position: absolute;
+      width: 276.923px;
+      height: 130.769px;
+      font-family: Georgia;
+      font-size: 32px;
+      text-align: center;
+      color: rgb(20, 34, 221);
+      background-image: none;
+      background-color: rgb(51, 163, 206);
+      left: 35px;
+      top: 127px;
+    }
+    .gwd-strong-14e1 {
+      top: 127px;
+      border-radius: 15px;
+    }
+    .gwd-span-45s9 {
+      position: absolute;
+      font-family: Georgia;
+      font-size: 32px;
+      text-align: center;
+      height: 132px;
+      left: 34px;
+      top: 290px;
+      width: 277px;
+      transform-origin: 119.846px 18.5385px 0px;
+      background-image: none;
+      background-color: rgb(49, 166, 211);
+    }
+    .gwd-strong-1tex {
+      position: absolute;
+      width: 264.615px;
+      height: 132.308px;
+      left: 43px;
+      top: 474px;
+      font-family: Georgia;
+      font-size: 32px;
+      text-align: center;
+      color: rgb(20, 34, 221);
+    }
+    .gwd-strong-kwsw {
+      position: absolute;
+      font-family: Georgia;
+      font-size: 32px;
+      color: rgb(20, 34, 221);
+      width: 323px;
+      top: 133px;
+      left: 405px;
+      transform-origin: 168.5px 252px 0px;
+      text-align: left;
+      height: 531px;
+    }
+    .gwd-span-hb4w {
+      font-size: 19px;
+    }
+    .gwd-span-1e6n {
+      font-size: 19px;
+    }
+    .gwd-strong-12j0 {
+      position: absolute;
+      left: 765px;
+      font-family: Georgia;
+      font-size: 32px;
+      color: rgb(20, 34, 221);
+      top: 127px;
+      width: 277px;
+      height: 444px;
+      transform-origin: -191.5px 257.846px 0px;
+    }
+
