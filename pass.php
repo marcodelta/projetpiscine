@@ -3,29 +3,39 @@
  $database = "net4work";
 //connecter l'utilisateur dans BDD
 //votre serveur = localhost | votre login = root | votre mot de pass = ‘’ (rien)
- $db_handle = mysqli_connect(‘localhost’, ‘root’, ‘’);
+ $db_handle = mysqli_connect('localhost', 'root', '');
  $db_found = mysqli_select_db($db_handle, $database);
  //si la BDD existe, faire le traitement
  
  if ($db_found) { 
 
-	$login = isset($_POST["identifiant"]) ? $_POST["identifiant"] : "";
+ 	//on récupère les données entrés par l'utilisateur
+	$login = isset($_POST["mail"]) ? $_POST["mail"] : "";
 	$pass = isset($_POST["passw"]) ? $_POST["passw"] : "";
-	//mots de passe stockés dans le serveur
 
-	$connection = false;
+	//$connection = false;
 
-	$sql = "SELECT * FROM connection WHERE 'email' = "$login" AND 'motdepasse' = "$pass"";
-
-		$connection = true;
+	//$reponse = "SELECT motdepasse FROM connection WHERE email = '".$login."'";
+	//$reponse = "SELECT motdepasse FROM connection WHERE email LIKE '%$login%' ";
+	$sql = "SELECT motdepasse FROM connection WHERE email LIKE '%$login%'";
+	$reponse = mysqli_query($db_handle,$sql);
+	$data = mysqli_fetch_assoc($reponse);
 	
 
+	if($data == $pass){
+		//$connection = true;
+		header("Location:connexion.html");
+	}
+	else {
+		header("Location:main.html");
+	}
+/*
 	if($connection) {
 		header("Location:main.html");
 	}
 	else {
 		header("Location:connexion.html");
-	}
+	}*/
 }
 else {
  	echo "Database not found";
