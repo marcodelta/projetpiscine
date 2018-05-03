@@ -15,7 +15,19 @@
   $sql = "SELECT idami FROM amis WHERE iduser LIKE '".$_SESSION['ID']."' ";
   $requete = mysqli_query($db_handle,$sql);
   $data = mysqli_fetch_assoc($requete);
+<<<<<<< HEAD
   }
+=======
+  $numero = sizeof($data['idami']);
+    for($i = 0; $i<$numero; $i++)
+    {
+       $sql = "SELECT nom, prenom FROM utilisateur WHERE iduser LIKE '".$data['idami']."' ";
+       $req = mysqli_query($db_handle,$sql);
+       $dat = mysqli_fetch_assoc($req);
+    }
+
+}
+>>>>>>> 06928141122c4b151dd1e333f78769c286fe292b
 
 
 
