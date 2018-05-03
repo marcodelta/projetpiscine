@@ -11,7 +11,6 @@ $database = "net4work";
  $db_found = mysqli_select_db($db_handle, $database);
  //si la BDD existe, faire le traitement
  
-
  if ($db_found) { 
   $sql = "INSERT INTO notification(descriptionnotif) VALUES '". $notif ."' ";
   $requete = mysqli_query($db_handle,$sql);
@@ -50,7 +49,7 @@ mysqli_close($db_handle);
     placeholder="Recherche sur le site…" required > 
     <button>Rechercher</button> 
     <span class="validity"></span> -->
-    <a href="main.html"><img id="image0" src="accueil.png" alt="Accueil" width="98" height="57" onmouseenter ="changeImage(this)"/></a>
+    <a href="main.php"><img id="image0" src="accueil.png" alt="Accueil" width="98" height="57" onmouseenter ="changeImage(this)"/></a>
     <a href="profil.php"><img id="image1" src="vous.png" alt="Profil" width="98" height="57" onmouseenter ="changeImage2(this)"/></a>
     <a href="reseau.php"><img id="image2" src="reseau.png" alt="Reseau" width="98" height="57" onmouseenter ="changeImage3(this)"/></a>
     <a href="notif.html"><img id="image3" src="notifications.png" alt="Notifications" width="98" height="57" onmouseenter="changeImage4(this)"/></a>
@@ -60,31 +59,22 @@ mysqli_close($db_handle);
    </div>
 
    <p class="gwd-p-13zt"><br> 
-   	<button class="button" id="document">Document</button>
-   	<button class="button" id="photo">Photo</button>
-   	<button class="button" id="video">Video</button>
+        <input type="file" name="monfichier" id="document" /><br />
+        <input type="submit" class="button" id="envoyer" />
   </p>
 
   <svg data-gwd-shape="rectangle" class="gwd-rect-1rd7"></svg>
   <svg data-gwd-shape="rectangle" class="gwd-rect-137l"></svg>
- 
-
-  	<input type="button" name="document">Document</input>
-
-    <input type="search" id="RechercheContact" class="search" name="q"
-    placeholder="Rechercher un contact..." required > 
+  
 
     <input type="search" id="maRecherche" class="search" name="q2"
-    placeholder="Exprimez vous...">
+    placeholder="Exprimez vous..." >
 
   <td colspan="2"><input type="submit" value="Search" class="recherche">
 
-    <span class="validity"></span>
+  <input type="search" id="RechercheContact" class="search" name="q"
+    placeholder="Rechercher un contact..." required >
 
-            <input type="search" id="RechercheContact" class="search" name="q"
-    placeholder="Rechercher un contact" required >
-
-     <h1 class="gwd-p-bdbp"><br class="">Marc Rahbani</h1>
        <span class="gwd-span-1iq8"><br class="">Mes messages</span>
 
  <div id="footer">Copyright &copy; 2018 net4work Properties<br/>
