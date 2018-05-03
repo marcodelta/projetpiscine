@@ -10,7 +10,7 @@ $db_handle = mysqli_connect('localhost','root','');
 $db_found = mysqli_select_db($db_handle, $database);
 //si la BDD existe
 if ($db_found) {
-$query = mysql_query("SELECT * FROM contact WHERE contact LIKE '%$search%' ORDER BY id_user") or die (mysql_error()); // la requête, que vous devez maintenant comprendre ;)
+$query = mysql_query("SELECT * FROM contact WHERE contact LIKE '%$search%' ORDER BY iduser") or die (mysql_error()); // la requête, que vous devez maintenant comprendre ;)
 $nb_resultats = mysql_num_rows($query); // on utilise la fonction mysql_num_rows pour compter les résultats pour vérifier par après
 if($nb_resultats != 0) // si le nombre de résultats est supérieur à 0, on continue
 {

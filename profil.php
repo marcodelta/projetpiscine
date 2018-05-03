@@ -22,6 +22,11 @@ $database = "net4work";
 	$poste = $data['poste'];
 	$entreprise = $data['entreprise'];
 
+  $sql1 = "SELECT email FROM connection WHERE iduser LIKE '".$_SESSION['ID']."' ";
+  $requete1 = mysqli_query($db_handle,$sql1);
+  $data1 = mysqli_fetch_assoc($requete1);
+  $mail = $data1['email'];
+
  	}
 else {
  	echo "Database not found";
@@ -68,7 +73,7 @@ mysqli_close($db_handle);
   <strong class="gwd-strong-1tex">Mes vidéos</strong>
   <strong class="gwd-strong-kwsw"><?php echo $prenom, " ", $name ?><br>
   <span class="gwd-span-hb4w"><?php echo $poste, " à ", $entreprise ?><br>Bonjour!<br><br><br><br><br><br><br><br><br></span>
-  <span class="gwd-span-1e6n">Pour me contacter :<br>Par email:<br><br><br></span></strong>
+  <span class="gwd-span-1e6n"><?php echo "adresse mail : ", $mail?><br><br><br></span></strong>
   <strong class="gwd-strong-12j0">Mon activité</strong>
 
  <div id="footer">Copyright &copy; 2018 net4work Properties<br/>
