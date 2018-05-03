@@ -1,18 +1,19 @@
+
 <?php
   session_start();
 ?>
 
 <?php
-$notif = isset($_POST["q2"]) ? $_POST["q2"] : "";
+ $notif = isset($_POST["q2"]) ? $_POST["q2"] : "";
 $database = "net4work";
 //connecter l'utilisateur dans BDD
 //votre serveur = localhost | votre login = root | votre mot de pass = ‘’ (rien)
  $db_handle = mysqli_connect('localhost', 'root', '');
  $db_found = mysqli_select_db($db_handle, $database);
  //si la BDD existe, faire le traitement
- 
+
  if ($db_found) { 
-  $sql = "INSERT INTO notification(descriptionnotif) VALUES '". $notif ."' ";
+  $sql = "INSERT INTO notification(iduser,descriptionnotif,provenancenotif,heure,date) VALUES ('0','". $notif ."','0','0','0') ";
   $requete = mysqli_query($db_handle,$sql);
   $data = mysqli_fetch_assoc($requete);
 
@@ -40,7 +41,6 @@ mysqli_close($db_handle);
 </script>
 </head>
 <body>
-
    
    <!-- Here is the topcolumn area -->
     <div id="buttoncolumn">
@@ -57,15 +57,17 @@ mysqli_close($db_handle);
     <a href="emplois.html"><img id="image5" src="emplois.png" alt="Emplois" width="98" height="57" onmouseenter ="changeImage6(this)"/></a>
 
    </div>
-
+   <form action="cible_envoi.php" method="post" enctype="multipart/form-data">
    <p class="gwd-p-13zt"><br> 
         <input type="file" name="monfichier" id="document" /><br />
         <input type="submit" class="button" id="envoyer" />
+        <embed name="mon fichier" class="pdf" width=300 height=300 type='application/pdf'/>
   </p>
+  </form>
 
-  <svg data-gwd-shape="rectangle" class="gwd-rect-1rd7"></svg>
-  <svg data-gwd-shape="rectangle" class="gwd-rect-137l"></svg>
-  
+  <svg data-gwd-shape="rectangle" class="gwd-rect-1rd7">
+   
+     </svg>  
 
     <input type="search" id="maRecherche" class="search" name="q2"
     placeholder="Exprimez vous..." >

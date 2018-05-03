@@ -34,7 +34,7 @@ $_SESSION['ID']=1;
 		$requete = mysqli_query($db_handle,$sql);
 		$data = mysqli_fetch_assoc($requete);
 		$_SESSION['ID']=$data['iduser'];
-		header("Location:main.html");
+		header("Location:main.php");
 	}
 	else {
 		header("Location:connexion.html");

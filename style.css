@@ -327,3 +327,9 @@ img{border: 0;
       border-radius: 15px;
       padding: 10px;
     }
+
+    .pdf{
+      position: absolute;
+      left:500px;
+      top:250px;
+    }
