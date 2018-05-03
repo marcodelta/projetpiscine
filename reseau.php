@@ -33,7 +33,7 @@
    
   </p>
 
-  <h1 class="gwd-p-bdbp"><br class="">Marc Rahbani</h1>
+  <h1 class="gwd-p-bdbp"><a href="ajoutami.html"><br class=""> Ajouter un nouveau contact</a></h1>
   <span class="gwd-span-1iq8"><br class="">Mes messages</span>
     <form action="recherche.php" method="post">
       <input type="search" id="RechercheContact2" class="search" name="q"
