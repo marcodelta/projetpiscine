@@ -29,13 +29,7 @@
 	else {
 		header("Location:connexion.html");
 	}
-/*
-	if($connection) {
-		header("Location:main.html");
-	}
-	else {
-		header("Location:connexion.html");
-	}*/
+
 }
 else {
  	echo "Database not found";
