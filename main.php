@@ -57,6 +57,7 @@ mysqli_close($db_handle);
     <a href="emplois.html"><img id="image5" src="emplois.png" alt="Emplois" width="98" height="57" onmouseenter ="changeImage6(this)"/></a>
 
    </div>
+   
    <form action="cible_envoi.php" method="post" enctype="multipart/form-data">
    <p class="gwd-p-13zt"><br> 
         <input type="file" name="monfichier" id="document" /><br />
