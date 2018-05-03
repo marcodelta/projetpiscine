@@ -35,8 +35,12 @@
 
   <h1 class="gwd-p-bdbp"><br class="">Marc Rahbani</h1>
   <span class="gwd-span-1iq8"><br class="">Mes messages</span>
-  <input type="search" id="RechercheContact2" class="search" name="q"
+    <form action="recherche.php" method="post">
+      <input type="search" id="RechercheContact2" class="search" name="q"
     placeholder="Rechercher un contact" required > 
+    <input type="submit" value="Envoyer" class="recherche">
+  </form>
+
   <span class="gwd-span-1iq9">
     <?php
 

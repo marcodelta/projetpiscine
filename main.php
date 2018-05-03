@@ -1,33 +1,4 @@
 
-<?php
-  session_start();
-?>
-
-<?php
- $notif = isset($_POST["q2"]) ? $_POST["q2"] : "";
-$database = "net4work";
-//connecter l'utilisateur dans BDD
-//votre serveur = localhost | votre login = root | votre mot de pass = ‘’ (rien)
- $db_handle = mysqli_connect('localhost', 'root', '');
- $db_found = mysqli_select_db($db_handle, $database);
- //si la BDD existe, faire le traitement
-
- if ($db_found) { 
-  $sql = "INSERT INTO notification(iduser,descriptionnotif,provenancenotif,heure,date) VALUES ('0','". $notif ."','0','0','0') ";
-  $requete = mysqli_query($db_handle,$sql);
-  $data = mysqli_fetch_assoc($requete);
-
-  $notif = $data['q2'];
-
-  }
-else {
-  echo "Database not found";
- }//end else
-//fermer la connection
-mysqli_close($db_handle); 
-
-?>
-
 <!DOCTYPE html>
 <!-- Sources:  -->
 <html>
@@ -37,7 +8,6 @@ mysqli_close($db_handle);
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="myScript.js">
-	
 </script>
 </head>
 <body>
@@ -62,25 +32,26 @@ mysqli_close($db_handle);
    <p class="gwd-p-13zt"><br> 
         <input type="file" name="monfichier" id="document" /><br />
         <input type="submit" class="staiv" id="send" />
-   <!--     <embed name="mon fichier" class="pdf" width=300 height=300 type='application/pdf'/>-->
+   <!--<embed name="mon fichier" class="pdf" width=300 height=300 type='application/pdf'/>-->
     
   </p>
   </form>
 
   <svg data-gwd-shape="rectangle" class="gwd-rect-1rd7">
-   
      </svg>  
 
-    <input type="search" id="maRecherche" class="search" name="q2"
-    placeholder="Exprimez vous..." >
-
- 
-
-  <input type="search" id="RechercheContact" class="search" name="q"
+      <form action="recherche.php" method="post">
+    <input type="search" id="RechercheContact" class="search" name="q"
     placeholder="Rechercher un contact..."  >
-    <td colspan="2"><input type="submit" value="Envoyer" class="recherche">
-       <span class="gwd-span-1iq8"><br class="">Mes messages</span>
+    <input type="submit" value="Envoyer" class="recherche">
+  </form>
 
+     <input type="search" id="maRecherche" class="search" name="q2"
+    placeholder="Exprimez vous..." >
+ 
+    
+
+    <span class="gwd-span-1iq8"><br class="">Mes messages</span>
  <div id="footer">Copyright &copy; 2018 net4work Properties<br/>
 <a href="mailto:net4work@gmail.com">net4work@gmail.com</a></div>
 
