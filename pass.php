@@ -15,7 +15,7 @@
 
 	$connection = false;
 
-	$sql = SELECT * FROM 'connection' WHERE 'email' = "$login" AND 'motdepasse' = "$pass";
+	$sql = "SELECT * FROM connection WHERE 'email' = "$login" AND 'motdepasse' = "$pass"";
 
 		$connection = true;
 	
