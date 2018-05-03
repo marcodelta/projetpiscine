@@ -26,18 +26,58 @@ dd {font-style:italic;
           left: 80px;
           top:300px; }
 
+#encadrement{ background-color: #000000;
+              color: white; 
+              position: absolute;
+              left: 633px;
+              top:65px;
+              padding: 50px;
+              width:90px;
+              height:0px;
+              border: solid #0000CD;
+              border-radius: 25px;
+              border-width: 5px;}
+
 #titreinscription { font-weight:bold;
                     font-size: 2.00em;
                     position: absolute;
-                    left: 700px;
+                    left: 650px;
                     top:70px; }
+.inscription_col_gauche
+{
+  padding-right: 60px;
+  padding-bottom: 10px;
+}
 
-#champ1 { font-size: 1.00em;
-          position: absolute;
-          left: 160px;
-          top:300px;
-          width:700px;
-          height:300px; }
+.inscription_col_gauche input
+{
+  width: 260px;
+  margin-left: 40px;
+}
+
+#champ1 
+{ 
+  position: absolute;
+  left: 210px;
+  top:310px;
+  width:750px;
+  height:300px; 
+}
+
+#champ1 td
+{
+  font-weight:bold;
+  font-size: 1.20em;
+}
+
+#champ1 input[type="text"]
+{
+  width: 260px;
+}
+#champ1 input[type="submit"]
+{
+  margin-left: 200px;
+}
 
 
 #footer { font-size: .80em;
@@ -56,11 +96,11 @@ dd {font-style:italic;
 #inscription{ background-color: #0000CD;
               color: white; 
               position: absolute;
-              left: 50px;
-              top:210px;
+              left: 150px;
+              top:240px;
               padding: 50px;
-              width:1000px;
-              height:280px; }
+              width:800px;
+              height:200px; }
 #logo1{
           position: absolute;
             left: 80px;
