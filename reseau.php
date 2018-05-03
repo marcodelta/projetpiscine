@@ -16,7 +16,6 @@
   $requete = mysqli_query($db_handle,$sql);
   $data = mysqli_fetch_assoc($requete);
 
-
   $numero = sizeof($data['idami']);
     for($i = 0; $i<$numero; $i++)
     {
@@ -25,6 +24,8 @@
        $dat = mysqli_fetch_assoc($req);
     }
 }
+
+
   else {
   echo "Database not found";
  }//end else
@@ -34,14 +35,12 @@ mysqli_close($db_handle);
 ?>
 
 
-
-
 <!DOCTYPE html>
 <!-- Sources:  -->
 <html>
 <head>
 
-	<title>Mon Réseau</title>
+  <title>Mon Réseau</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="myScript.js">
