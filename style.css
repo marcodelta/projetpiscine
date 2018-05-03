@@ -52,7 +52,7 @@ img{border: 0;
       position: absolute;
       width: 192.994px;
       height: 36px;
-      left: 1300px;
+      left: 1150px;
       top: 137.006px;
       box-sizing: border-box;
       border-width: 1px;
@@ -81,7 +81,7 @@ img{border: 0;
 		 font-size: .80em;
           font-style: italic;
           position: absolute;
-            bottom: 0px;
+            top: 720px;
             left: 650px;
             height:15px; }
 .button {
@@ -158,48 +158,57 @@ img{border: 0;
       color: rgb(20, 34, 221);
       background-image: none;
       background-color: rgb(51, 163, 206);
-      left: 35px;
-      top: 127px;
+      left: 34px;
+      top: 165px;
+      border-radius: 15px;
     }
     .gwd-strong-14e1 {
       top: 127px;
       border-radius: 15px;
     }
     .gwd-span-45s9 {
-      position: absolute;
-      font-family: Georgia;
-      font-size: 32px;
-      text-align: center;
-      height: 132px;
-      left: 34px;
-      top: 290px;
-      width: 277px;
-      transform-origin: 119.846px 18.5385px 0px;
-      background-image: none;
-      background-color: rgb(49, 166, 211);
-    }
-    .gwd-strong-1tex {
-      position: absolute;
-      width: 264.615px;
-      height: 132.308px;
-      left: 43px;
-      top: 474px;
+         position: absolute;
+      width: 276.923px;
+      height: 130.769px;
       font-family: Georgia;
       font-size: 32px;
       text-align: center;
       color: rgb(20, 34, 221);
+      background-image: none;
+      background-color: rgb(51, 163, 206);
+      left: 34px;
+      top: 315px;
+      border-radius: 15px;
+    }
+    .gwd-strong-1tex {
+        position: absolute;
+      width: 276.923px;
+      height: 130.769px;
+      font-family: Georgia;
+      font-size: 32px;
+      text-align: center;
+      color: rgb(20, 34, 221);
+      background-image: none;
+      background-color: rgb(51, 163, 206);
+      left: 34px;
+      top: 465px;
+      border-radius: 15px;
     }
     .gwd-strong-kwsw {
       position: absolute;
       font-family: Georgia;
       font-size: 32px;
+       background-image: none;
+      background-color: rgb(51, 163, 206);
       color: rgb(20, 34, 221);
-      width: 323px;
+      width: 500px;
       top: 133px;
       left: 405px;
       transform-origin: 168.5px 252px 0px;
       text-align: left;
       height: 531px;
+      border-radius: 15px;
+      padding: 5px;
     }
     .gwd-span-hb4w {
       font-size: 19px;
@@ -208,14 +217,19 @@ img{border: 0;
       font-size: 19px;
     }
     .gwd-strong-12j0 {
-      position: absolute;
-      left: 765px;
+           position: absolute;
       font-family: Georgia;
       font-size: 32px;
+       background-image: none;
+      background-color: rgb(51, 163, 206);
       color: rgb(20, 34, 221);
-      top: 127px;
-      width: 277px;
-      height: 444px;
-      transform-origin: -191.5px 257.846px 0px;
+      width: 350px;
+      top: 133px;
+      left: 1000px;
+      transform-origin: 168.5px 252px 0px;
+      text-align: left;
+      height: 531px;
+      border-radius: 15px;
+      padding: 5px;
     }
 
