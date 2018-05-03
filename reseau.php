@@ -15,7 +15,7 @@
   $sql = "SELECT idami FROM amis WHERE iduser LIKE '".$_SESSION['ID']."' ";
   $requete = mysqli_query($db_handle,$sql);
   $data = mysqli_fetch_assoc($requete);
-  for()
+  }
 
 
 
