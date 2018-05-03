@@ -22,10 +22,7 @@ $_SESSION['ID']=1;
 	$login = isset($_POST["mail"]) ? $_POST["mail"] : "";
 	$pass = isset($_POST["passw"]) ? $_POST["passw"] : "";
 
-	//$connection = false;
-
-	//$reponse = "SELECT motdepasse FROM connection WHERE email = '".$login."'";
-	//$reponse = "SELECT motdepasse FROM connection WHERE email LIKE '%$login%' ";
+	
 	$sql = "SELECT motdepasse FROM connection WHERE email LIKE '".$login."'";
 	$reponse = mysqli_query($db_handle,$sql);
 	$data = mysqli_fetch_assoc($reponse);
