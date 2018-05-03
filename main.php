@@ -73,7 +73,7 @@ mysqli_close($db_handle);
     <input type="search" id="maRecherche" class="search" name="q2"
     placeholder="Exprimez vous..." >
 
-  <td colspan="2"><input type="submit" value="Search" class="recherche">
+  <td colspan="2"><input type="submit" value="Envoyer" class="recherche">
 
   <input type="search" id="RechercheContact" class="search" name="q"
     placeholder="Rechercher un contact..." required >

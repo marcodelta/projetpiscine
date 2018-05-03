@@ -34,7 +34,6 @@
   </p>
 
   <h1 class="gwd-p-bdbp"><br class="">Marc Rahbani</h1>
-
   <span class="gwd-span-1iq8"><br class="">Mes messages</span>
   <input type="search" id="RechercheContact2" class="search" name="q"
     placeholder="Rechercher un contact" required > 
