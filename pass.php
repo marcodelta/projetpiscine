@@ -35,7 +35,8 @@ $_SESSION['ID']=1;
 
 		$sql = "SELECT iduser FROM connection WHERE email LIKE '".$login."'";
 		$requete = mysqli_query($db_handle,$sql);
-		$_Session['ID'] = mysqli_fetch_assoc($requete);
+		$data = mysqli_fetch_assoc($requete);
+		$_SESSION['ID']=$data['iduser'];
 		header("Location:main.html");
 	}
 	else {
