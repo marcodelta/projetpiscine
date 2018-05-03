@@ -17,17 +17,17 @@
 
 	//$reponse = "SELECT motdepasse FROM connection WHERE email = '".$login."'";
 	//$reponse = "SELECT motdepasse FROM connection WHERE email LIKE '%$login%' ";
-	$sql = "SELECT motdepasse FROM connection WHERE email LIKE '%$login%'";
+	$sql = "SELECT motdepasse FROM connection WHERE email LIKE '".$login."'";
 	$reponse = mysqli_query($db_handle,$sql);
 	$data = mysqli_fetch_assoc($reponse);
 	
+	echo $sql;
 
-	if($data == $pass){
-		//$connection = true;
-		header("Location:connexion.html");
+	if($data['motdepasse'] == $pass){
+		header("Location:main.html");
 	}
 	else {
-		header("Location:main.html");
+		header("Location:connexion.html");
 	}
 /*
 	if($connection) {
