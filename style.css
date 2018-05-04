@@ -384,3 +384,16 @@ img{border: 0;
       border-radius: 10px;
       padding: 10px;
     }
+
+    .nvcontact{
+      text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight:bold;
+       position: absolute;
+   left: 985px;
+   top: 300px;
+   height: 25px;
+   width: 300px;
+   color: rgb(20, 34, 221);
+    }
