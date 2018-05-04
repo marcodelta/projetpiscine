@@ -51,7 +51,7 @@ img{border: 0;
     .gwd-rect-1rd7 {
       background-color: rgb(169, 196, 235);
       position: absolute;
-      width: 460px;
+      width: 1100px;
       height: 440px;
       left: 400px;
       top: 275px;
@@ -175,24 +175,54 @@ img{border: 0;
 #document{
          position: absolute;
       left: 405px;
-      top: 100px;
+      top: 200px;
       border-radius: 10px;
       padding: 10px;
+       text-align: center;
+       background-color: rgb(169, 196, 235);
+     font-family: Arial;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
+      padding: 10px;
+      color: white;
 }
 
 #photo{
        position: absolute;
-      left: 600px;
-      top: 100px;
+      left: 705px;
+      top: 200px;
       border-radius: 10px;
       padding: 10px;
+       text-align: center;
+       background-color: rgb(169, 196, 235);
+     font-family: Arial;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
+      padding: 10px;
+      color: white;
 }
 #video{
           position: absolute;
-      left: 785px;
-      top: 100px;
+      left: 1005px;
+      top: 200px;
       border-radius: 10px;
       padding: 10px;
+       text-align: center;
+       background-color: rgb(169, 196, 235);
+     font-family: Arial;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
+      padding: 10px;
+      color: white;
    }
 
 
@@ -439,10 +469,41 @@ text-align: center;
     .staiv{
 
        position: absolute;
-      left:700px;
-      top:100px;
+      left:600px;
+      top:200px;
       height: 40px;
-      width: 250px;
+      width: 75px;
+     text-align: center;
+       background-color: rgb(169, 196, 235);
+     font-family: Arial;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
+      padding: 10px;
+    }
+     .staiv2{
+
+       position: absolute;
+      left:900px;
+      top:200px;
+      height: 40px;
+      width: 75px;
+     text-align: center;
+       background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+ .staiv3{
+
+       position: absolute;
+      left:1200px;
+      top:200px;
+      height: 40px;
+      width: 75px;
      text-align: center;
        background-color: rgb(169, 196, 235);
       border-color: rgb(169, 196, 235);
@@ -482,6 +543,22 @@ text-align: center;
     }
     .image{
        position: absolute;
-      left: 475px;
+      left: 450px;
+      top: 350px;
+    }
+    .doc{
+       position: absolute;
+      left: 700px;
+      top: 350px;
+    }
+
+     .video{
+       position: absolute;
+      left: 1100px;
+      top: 350px;
+    }
+     .texte{
+       position: absolute;
+      left: 1200px;
       top: 350px;
     }

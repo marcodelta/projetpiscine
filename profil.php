@@ -75,7 +75,7 @@ mysqli_close($db_handle);
   <strong class="gwd-strong-kwsw"><?php echo $prenom, " ", $name ?><br>
 
   <span class="gwd-span-hb4w"><?php echo $poste, " à ", $entreprise ?><br>Bonjour!<br>
-    <input type="submit" value="Envoyer" class="recherche"><br><br><br><br><br><br><br><br><br></span>
+    <input type="submit" value="Envoyer" class="recherche"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></span>
      <textarea name="description" class="description">Décrivez vous</textarea>
   <span class="gwd-span-1e6n"><?php echo "adresse mail : ", $mail?><br><br><br></span></strong>
   <strong class="gwd-strong-12j0">Mon activité</strong>
