@@ -84,7 +84,14 @@
         }
         while ($ligne = mysqli_fetch_assoc($result3)) {
           ?>
-           <iframe class="video" width="200" height="200" src="<?php echo ($ligne['lien']) ;?>"/></iframe>
+           <div class="video">
+           <object width="250" height="250">
+          <param name="movie" value="<?php echo ($ligne['lien']) ;?>"></param>
+          <param name="wmode" value="transparent"></param>
+          <embed src="<?php echo ($ligne['lien']) ;?>" type="application/x-shockwave-flash" wmode="transparent" width="250" height="250"></embed>
+          </object>
+          </div>
+
         <?php
         }
         while ($ligne = mysqli_fetch_assoc($result4)) {
