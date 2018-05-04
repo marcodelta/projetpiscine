@@ -216,70 +216,80 @@ img{border: 0;
       position: absolute;
       width: 276.923px;
       height: 130.769px;
+      text-align: center;
       font-family: Arial;
       font-weight:bold;
-      font-size: 32px;
-      text-align: center;
-      color: rgb(20, 34, 221);
+      font-size: 20px;
+      color: rgb(83, 137, 214);
       background-image: none;
-     background-color: rgb(146, 211, 234);
-      border-style: groove;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
       left: 34px;
       top: 165px;
-      border-radius: 15px;
     }
     .gwd-strong-14e1 {
       top: 127px;
-      border-radius: 15px;
+     text-align: center;
+      font-family: Arial;
+      font-weight:bold;
+      font-size: 20px;
+      color: rgb(83, 137, 214);
+      background-image: none;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
     }
     .gwd-span-45s9 {
          position: absolute;
       width: 276.923px;
       height: 130.769px;
+      text-align: center;
       font-family: Arial;
       font-weight:bold;
-      font-size: 32px;
-      text-align: center;
-      color: rgb(20, 34, 221);
+      font-size: 20px;
+      color: rgb(83, 137, 214);
       background-image: none;
-      background-color: rgb(146, 211, 234);
-      border-style: groove;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
       left: 34px;
       top: 315px;
-      border-radius: 15px;
+
     }
     .gwd-strong-1tex {
         position: absolute;
       width: 276.923px;
       height: 130.769px;
+   text-align: center;
       font-family: Arial;
       font-weight:bold;
-      font-size: 32px;
-      text-align: center;
-      color: rgb(20, 34, 221);
+      font-size: 20px;
+      color: rgb(83, 137, 214);
       background-image: none;
-      background-color: rgb(146, 211, 234);
-      border-style: groove;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
       left: 34px;
       top: 465px;
-      border-radius: 15px;
     }
     .gwd-strong-kwsw {
       position: absolute;
+     text-align: center;
       font-family: Arial;
       font-weight:bold;
-      font-size: 32px;
-       background-image: none;
-      background-color: rgb(146, 211, 234);
-      border-style: groove;
-      color: rgb(20, 34, 221);
+      font-size: 20px;
+      color: rgb(83, 137, 214);
+      background-image: none;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
       width: 500px;
       top: 133px;
       left: 405px;
       transform-origin: 168.5px 252px 0px;
       text-align: left;
       height: 531px;
-      border-radius: 15px;
       padding: 5px;
     }
     .gwd-span-hb4w {
@@ -290,20 +300,21 @@ img{border: 0;
     }
     .gwd-strong-12j0 {
            position: absolute;
+     text-align: center;
       font-family: Arial;
       font-weight:bold;
-      font-size: 32px;
-       background-image: none;
-      background-color: rgb(146, 211, 234);
-      border-style: groove;
-      color: rgb(20, 34, 221);
+      font-size: 20px;
+      color: rgb(83, 137, 214);
+      background-image: none;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
       width: 350px;
       top: 133px;
       left: 1000px;
       transform-origin: 168.5px 252px 0px;
       text-align: left;
       height: 531px;
-      border-radius: 15px;
       padding: 5px;
     }
 
@@ -313,67 +324,84 @@ img{border: 0;
       height:500px;
       left: 450px;
       top: 210px;
-      color: rgb(20, 34, 221);
-      text-align: center;
+     text-align: center;
       font-family: Arial;
       font-weight:bold;
-      font-size: 32px;
+      font-size: 20px;
+      color: rgb(83, 137, 214);
       background-image: none;
-      background-color: rgb(146, 211, 234);
-      border-style: groove;
-      border-radius: 15px;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
     }
 
     .gwd-span-1iq10 {
        position: absolute;
       width: 200px;
-      height:200px;
-      left: 1050px;
+      height:250px;
+      left: 1100px;
       top: 210px;
       text-align: center;
       font-family: Arial;
       font-weight:bold;
-      font-size: 32px;
-      color: rgb(20, 34, 221);
+      font-size: 20px;
+      color: rgb(83, 137, 214);
       background-image: none;
-      background-color: rgb(146, 211, 234);
-      border-style: groove;
-      border-radius: 15px;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
     }
 
     .Amis{
    position: absolute;
-   left: 1075px;
+   left: 1125px;
    top: 275px;
    height: 25px;
    width: 25px;
-   color: rgb(20, 34, 221);
-   background-color: rgb(146, 211, 234);
+  text-align: center;
+      font-family: Arial;
+      font-weight:bold;
+      font-size: 20px;
+      color: rgb(83, 137, 214);
+      background-image: none;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
     }
 
     .Contacts{
    position: absolute;
-   left: 1075px;
+   left: 1125px;
    top: 325px;
    height: 25px;
    width: 25px;
-   background-color: rgb(146, 211, 234);
-   color: rgb(20, 34, 221);
+   text-align: center;
+      font-family: Arial;
+      font-weight:bold;
+      font-size: 20px;
+      color: rgb(83, 137, 214);
+      background-image: none;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
 
     }
 
      .gwd-p-13zu {
-     	 text-align: center;
-    font-size: 25px;
-    font-family: Arial;
-    font-weight:bold;
        position: absolute;
-   left: 1125px;
-   top: 218px;
+   left: 1200px;
+   top: 200px;
    height: 25px;
    width: 25px;
-   color: rgb(20, 34, 221);
-    }
+text-align: center;
+      font-family: Arial;
+      font-weight:bold;
+      font-size: 23px;
+      color: rgb(83, 137, 214);
+      background-image: none;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;    }
 
     .recherche{
      position: absolute;
@@ -381,6 +409,12 @@ img{border: 0;
       height: 40px;
       left: 1275px;
       top: 135px;
+      text-align: center;
+      font-family: Arial;
+      font-weight:bold;
+      font-size: 20px;
+      color: rgb(83, 137, 214);
+      background-image: none;
       background-color: rgb(169, 196, 235);
       border-color: rgb(169, 196, 235);
       border-radius: 10px;
@@ -394,7 +428,12 @@ img{border: 0;
       border-style: solid;
       font-family: Arial;
       font-weight:bold;
+      font-size: 20px;
       color: rgb(83, 137, 214);
+      background-image: none;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
     }
 
     .staiv{
@@ -424,18 +463,6 @@ img{border: 0;
       padding: 10px;
     }
 
-    .nvcontact{
-      text-align: center;
-    font-size: 20px;
-    font-family: Arial;
-    font-weight:bold;
-       position: absolute;
-   left: 985px;
-   top: 300px;
-   height: 25px;
-   width: 300px;
-   color: rgb(20, 34, 221);
-    }
 
     .description{
     font-size: 18px;
@@ -447,10 +474,11 @@ img{border: 0;
    top: 130px;
    height: 300px;
    width: 350px;
-  background-color: rgb(146, 211, 234);
-  border-style: groove;
-  color: rgb(20, 34, 221);
-     border-radius: 15px;
+   color: rgb(83, 137, 214);
+    background-image: none;
+   background-color: rgb(169, 196, 235);
+   border-color: rgb(169, 196, 235);
+    border-radius: 10px;
     }
     .image{
        position: absolute;
