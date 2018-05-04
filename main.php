@@ -1,6 +1,3 @@
-<?php
-$exprimez = isset($_POST["q2"]) ? $_POST["q2"] : "";
-?>
 
 <!DOCTYPE html>
 <!-- Sources:  -->
@@ -33,15 +30,31 @@ $exprimez = isset($_POST["q2"]) ? $_POST["q2"] : "";
 
    <form action="cible_envoi.php" method="post" enctype="multipart/form-data">
    <p class="gwd-p-13zt"><br> 
-        <input type="file" name="monfichier" id="document" /><br />
+        <input type="text" name="monfichier" id="document" /><br />
         <input type="submit" class="staiv" id="send" />
+      </form>
+      </p>
          <svg data-gwd-shape="rectangle" class="gwd-rect-1rd7">
-          <?php echo $exprimez ?>
+          <?php
+          //identifier le nom de base de données
+        $database = "net4work";
+        //connecter l'utilisateur dans BDD
+        //votre serveur = localhost | votre login = root | votre mot de pass = ‘’ (rien)
+       $db_handle = mysqli_connect('localhost', 'root', '');
+        $db_found = mysqli_select_db($db_handle, $database);
+          $sql = "SELECT * FROM photo";
+        $result = mysqli_query($db_handle,$sql);
+        while ($ligne = mysqli_fetch_assoc($result)) {
+          ?>
+          <img class="image" width="300" height="300" src=" <?php echo ($ligne['lien']) ;?>"/>
+          <?php
+        }
+        ?>
           </svg> 
    <!--<embed name="mon fichier" class="pdf" width=300 height=300 type='application/pdf'/>-->
     
-  </p>
-  </form>
+  
+  
 
   
 

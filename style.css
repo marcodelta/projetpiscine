@@ -54,7 +54,7 @@ img{border: 0;
       width: 460px;
       height: 440px;
       left: 400px;
-      top: 160px;
+      top: 275px;
       box-sizing: border-box;
       border-width: 1px;
       border-style: solid;
@@ -452,4 +452,8 @@ img{border: 0;
   color: rgb(20, 34, 221);
      border-radius: 15px;
     }
-
+    .image{
+       position: absolute;
+      left: 475px;
+      top: 350px;
+    }
