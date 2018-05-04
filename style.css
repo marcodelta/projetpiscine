@@ -25,6 +25,19 @@ img{border: 0;
       background-color: rgb(83, 137, 214);
     }
 
+    .ajoutAmi {
+      position: absolute;
+      top: 95px;
+      right:800px;
+      height: 500px;
+      width: 500px;
+      color: rgb(255, 255, 255);
+      font-family: Arial;
+      font-weight:bold;
+      background-image: none;
+      background-color: rgb(83, 137, 214);
+    }
+
     .gwd-p-63zt {
       position: absolute;
       left: 690px;
@@ -46,6 +59,19 @@ img{border: 0;
       background-image: none;
       background-color: rgb(83, 137, 214);
       border-color :red;
+    }
+
+    .EnvoyerContact {
+      position: absolute;
+      top: 50px;
+      left:-300px;
+      height: 10px;
+      width: 10px;
+      color: rgb(255, 255, 255);
+      font-family: Arial;
+      font-weight:bold;
+      background-image: none;
+      background-color: rgb(83, 137, 214);
     }
 
     .gwd-rect-1rd7 {
@@ -104,8 +130,8 @@ img{border: 0;
     #RechercheContact{
       position: absolute;
       width: 250px;
-      height: 36px;
-      left: 1000px;
+      height: 50px;
+      left: 900px;
       top: 137.006px;
       box-sizing: border-box;
       border-width: 1px;
@@ -135,7 +161,7 @@ img{border: 0;
      #maRecherche{
       background-color: rgb(169, 196, 235);
       position: absolute;
-      width: 460px;
+      width: 350px;
       height: 50px;
       left: 400px;
       top: 137.006px;
@@ -148,6 +174,21 @@ img{border: 0;
       border-color: rgb(169, 196, 235);
       border-radius: 10px;
       padding: 10px;
+    }
+
+    .Publier {
+      position: absolute;
+      top: -17px;
+      right:1240px;
+      height: 50px;
+      width: 50px;
+      color: rgb(255, 255, 255);
+      font-family: Arial;
+      font-weight:bold;
+      background-image: none;
+      border-style: solid;
+      border-color: rgb(169, 196, 235);
+      border-radius: 10px;
     }
 
 #footer {background-color: rgb(169, 196, 235);
@@ -174,18 +215,21 @@ img{border: 0;
 
 #document{
          position: absolute;
-      left: 405px;
+      left: 410px;
       top: 100px;
       border-radius: 10px;
       padding: 10px;
 }
 
-#photo{
+#send{
        position: absolute;
-      left: 600px;
+      left: 710px;
       top: 100px;
       border-radius: 10px;
+      border-color: rgb(255,255,255);
       padding: 10px;
+      height: 50px;
+      width: 150px;
 }
 #video{
           position: absolute;
@@ -200,8 +244,8 @@ img{border: 0;
        position: absolute;
       width: 300px;
       height: 500px;
-      left: 46.8728px;
-      top: 137.006px;
+      left: 46px;
+      top: 137px;
       text-align: center;
       font-family: Arial;
       font-weight:bold;
@@ -214,76 +258,97 @@ img{border: 0;
     }
     .gwd-span-14na {
       position: absolute;
-      width: 276.923px;
-      height: 130.769px;
+      width: 276px;
+      height: 130px;
       font-family: Arial;
       font-weight:bold;
-      font-size: 32px;
+      font-size: 20px;
       text-align: center;
-      color: rgb(20, 34, 221);
+      color: rgb(83, 137, 214);
       background-image: none;
-     background-color: rgb(146, 211, 234);
-      border-style: groove;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-style: solid;
       left: 34px;
-      top: 165px;
-      border-radius: 15px;
+      top: 135px;
+      border-radius: 10px;
     }
     .gwd-strong-14e1 {
       top: 127px;
       border-radius: 15px;
     }
     .gwd-span-45s9 {
-         position: absolute;
-      width: 276.923px;
-      height: 130.769px;
+        position: absolute;
+      width: 276px;
+      height: 130px;
       font-family: Arial;
       font-weight:bold;
-      font-size: 32px;
+      font-size: 20px;
       text-align: center;
-      color: rgb(20, 34, 221);
+      color: rgb(83, 137, 214);
       background-image: none;
-      background-color: rgb(146, 211, 234);
-      border-style: groove;
+      background-color: rgb(169, 196, 235);
+      border-color: rgb(169, 196, 235);
+      border-style: solid;
       left: 34px;
-      top: 315px;
-      border-radius: 15px;
+      top: 290px;
+      border-radius: 10px;
     }
     .gwd-strong-1tex {
         position: absolute;
-      width: 276.923px;
-      height: 130.769px;
+      width: 276px;
+      height: 130px;
       font-family: Arial;
       font-weight:bold;
-      font-size: 32px;
+      font-size: 20px;
       text-align: center;
-      color: rgb(20, 34, 221);
+      color: rgb(83, 137, 214);
       background-image: none;
-      background-color: rgb(146, 211, 234);
-      border-style: groove;
+      background-color: rgb(169, 196, 235);
+      border-style: solid;
       left: 34px;
-      top: 465px;
-      border-radius: 15px;
+      top: 445px;
+      border-radius: 10px;
     }
     .gwd-strong-kwsw {
       position: absolute;
       font-family: Arial;
       font-weight:bold;
       font-size: 32px;
-       background-image: none;
-      background-color: rgb(146, 211, 234);
-      border-style: groove;
-      color: rgb(20, 34, 221);
-      width: 500px;
+      background-image: none;
+      background-color: rgb(169, 196, 235);
+      border-style: solid;
+      color: rgb(83, 137, 214);
+      width: 400px;
       top: 133px;
-      left: 405px;
+      left: 350px;
       transform-origin: 168.5px 252px 0px;
       text-align: left;
-      height: 531px;
-      border-radius: 15px;
+      height: 500px;
+      border-radius: 10px;
       padding: 5px;
     }
     .gwd-span-hb4w {
-      font-size: 19px;
+      font-size: 190px;
+      background-color: rgb(169, 196, 235);
+      border-style: solid;
+      background-image: none;
+      background-color: rgb(169, 196, 235);
+      top: 133px;
+      left: 350px;
+    }
+    .BoutonEnvoyer2{
+      position: absolute;
+      top: 370px;
+      right:1360px;
+      height: 10px;
+      width: 10px;
+      color: rgb(255, 255, 255);
+      font-family: Arial;
+      font-weight:bold;
+      background-image: none;
+      background-color: rgb(83, 137, 214);
+      border-style: solid;
     }
     .gwd-span-1e6n {
       font-size: 19px;

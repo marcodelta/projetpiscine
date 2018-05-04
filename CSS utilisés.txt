@@ -1,0 +1,31 @@
+MAIN
+
+buttoncolumn --- logo
+image0 --- image accueil
+image1 --- image Vous
+image2 --- image Réseau
+image3 --- image Notif
+image4 --- image Messagerie
+image5 --- image Emploi
+gwd-p-13zt --- Carré bleu central
+document --- bouton parcourir
+send --- bouton envoyer
+gwd-rect-1rd7 --- carré statut central
+RechercheContact --- pour rechercher un contact à droite
+maRecherche --- exprimez-vous du haut
+gwd-span-1iq8 --- Carré Mes Messages à gauche
+footer --- footer du main
+EnvoyerContact --- Bouton Envoyer sous recherche contact
+Publier --- Publier son statut
+
+RESEAU
+
+gwd-span-14na --- Carré documents à gauche
+gwd-span-45s9 --- Carré photos à gauche
+gwd-strong-1tex --- Carré vidéos à gauche
+gwd-strong-kwsw --- Carré profin central
+gwd-span-hb4w --- Carré info dans carré central
+BoutonEnvoyer2 --- Bouton pour envoyer les infos
+
+
+

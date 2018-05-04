@@ -29,7 +29,9 @@
     <a href="emplois.html"><img id="image5" src="emplois.png" alt="Emplois" width="98" height="57" onmouseenter ="changeImage6(this)"/></a>
    </div>
 
-   <p class="gwd-p-13zt"><br>  
+	<p class="gwd-p-13zt"></p>
+
+   <p class="ajoutAmi"><br>  
    <a href="ajoutami.html" class="nvcontact"><br class=""> Ajouter un nouveau contact</a>
   </p>
 

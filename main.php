@@ -48,14 +48,18 @@ $exprimez = isset($_POST["q2"]) ? $_POST["q2"] : "";
       <form action="recherche.php" method="post">
     <input type="search" id="RechercheContact" class="search" name="q"
     placeholder="Rechercher un contact..."  >
+    <p class="EnvoyerContact">
     <input type="submit" value="Envoyer" class="recherche">
+  </p>
     
   </form>
 
     <form>
      <input type="search" id="maRecherche" class="search" name="q2"
     placeholder="Exprimez vous..." >
+    <p class="Publier">
             <input type="submit" value ="Publier" class="exprimezvous"  />
+          </p>
     </form>
  
     
