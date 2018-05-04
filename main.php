@@ -1,6 +1,5 @@
 <?php
-$pass = isset($_POST["q2"]) ? $_POST["passw"] : "";
-
+$exprimez = isset($_POST["q2"]) ? $_POST["q2"] : "";
 ?>
 
 <!DOCTYPE html>
@@ -36,13 +35,15 @@ $pass = isset($_POST["q2"]) ? $_POST["passw"] : "";
    <p class="gwd-p-13zt"><br> 
         <input type="file" name="monfichier" id="document" /><br />
         <input type="submit" class="staiv" id="send" />
+         <svg data-gwd-shape="rectangle" class="gwd-rect-1rd7">
+          <?php echo $exprimez ?>
+          </svg> 
    <!--<embed name="mon fichier" class="pdf" width=300 height=300 type='application/pdf'/>-->
     
   </p>
   </form>
 
-  <svg data-gwd-shape="rectangle" class="gwd-rect-1rd7">
-     </svg>  
+  
 
       <form action="recherche.php" method="post">
     <input type="search" id="RechercheContact" class="search" name="q"
