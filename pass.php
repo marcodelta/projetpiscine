@@ -3,6 +3,7 @@
 session_start();
 /*session is started if you don't write this line can't use $_Session  global variable*/
 $_SESSION['ID']=1;
+$_SESSION['admin']=0;
 
 ?>
 
@@ -27,9 +28,6 @@ $_SESSION['ID']=1;
 	$reponse = mysqli_query($db_handle,$sql);
 	$data = mysqli_fetch_assoc($reponse);
 	
-	if ($login="admin@admin.fr" && $pass="admin"){
-		header("Location:admin.php");
-	}
 
 	if($data['motdepasse'] == $pass){
 
@@ -37,6 +35,12 @@ $_SESSION['ID']=1;
 		$requete = mysqli_query($db_handle,$sql);
 		$data = mysqli_fetch_assoc($requete);
 		$_SESSION['ID']=$data['iduser'];
+
+		$sql2 = "SELECT grade FROM utilisateur WHERE iduser LIKE '".$_SESSION['ID']."' ";
+  		$requete2 = mysqli_query($db_handle,$sql2);
+ 		$data2 = mysqli_fetch_assoc($requete2);
+ 		$_SESSION['admin'] = $data2['grade'];
+
 		header("Location:main.php");
 	}
 	else {
