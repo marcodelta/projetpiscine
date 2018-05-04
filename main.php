@@ -48,6 +48,7 @@ $pass = isset($_POST["q2"]) ? $_POST["passw"] : "";
     <input type="search" id="RechercheContact" class="search" name="q"
     placeholder="Rechercher un contact..."  >
     <input type="submit" value="Envoyer" class="recherche">
+    
   </form>
 
     <form>
