@@ -1,3 +1,7 @@
+<?php
+$pass = isset($_POST["q2"]) ? $_POST["passw"] : "";
+
+?>
 
 <!DOCTYPE html>
 <!-- Sources:  -->
@@ -46,8 +50,11 @@
     <input type="submit" value="Envoyer" class="recherche">
   </form>
 
+    <form>
      <input type="search" id="maRecherche" class="search" name="q2"
     placeholder="Exprimez vous..." >
+            <input type="submit" value ="Publier" class="exprimezvous"  />
+    </form>
  
     
 
