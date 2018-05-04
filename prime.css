@@ -38,11 +38,29 @@ dd {font-style:italic;
               border-radius: 25px;
               border-width: 5px;}
 
+#encadrement2{ background-color: #000000;
+              color: white; 
+              position: absolute;
+              left: 1185px;
+              top:65px;
+              padding: 50px;
+              width:90px;
+              height:0px;
+              border: solid #0000CD;
+              border-radius: 25px;
+              border-width: 5px;}
+
 #titreinscription { font-weight:bold;
                     font-size: 2.00em;
                     position: absolute;
                     left: 650px;
                     top:70px; }
+#titresuppression{ font-weight:bold;
+                    font-size: 2.00em;
+                    position: absolute;
+                    left: 1200px;
+                    top:70px; }
+
 .inscription_col_gauche
 {
   padding-right: 60px;
@@ -101,6 +119,14 @@ dd {font-style:italic;
               padding: 50px;
               width:800px;
               height:200px; }
+#suppression{ background-color: #0000CD;
+              color: white; 
+              position: absolute;
+              right: 15px;
+              top:240px;
+              padding: 50px;
+              width:300px;
+              height:200px; }
 #logo1{
           position: absolute;
             left: 80px;
@@ -109,12 +135,34 @@ dd {font-style:italic;
 #logo2{
           position: absolute;
           left: 50px;
-          bottom: 400px;}
+          bottom: 500px;}
 
 img{border: 0;}
 
 .property {
     padding-right: 50px;
     padding-top: 5px;
+}
+#supprmail{
+  position: absolute;
+  right: 150px;
+  bottom: 300px;
+   padding-right: 60px;
+  padding-bottom: 10px;
 
+}
+
+#validersuppr{
+  position: absolute;
+  right: 50px;
+  bottom: 305px;
+
+}
+
+#positionmail{
+   font-weight:bold;
+  font-size: 1.20em;
+    position: absolute;
+  right: 265px;
+  bottom: 330px;
 }
