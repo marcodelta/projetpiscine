@@ -27,6 +27,9 @@ $_SESSION['ID']=1;
 	$reponse = mysqli_query($db_handle,$sql);
 	$data = mysqli_fetch_assoc($reponse);
 	
+	if ($login="admin@admin.fr" && $pass="admin"){
+		header("Location:admin.php");
+	}
 
 	if($data['motdepasse'] == $pass){
 
