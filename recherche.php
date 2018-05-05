@@ -1,3 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resultat recherche</title>
+
+</head>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<body>
+<p class="recherchephp">
 <?php
 
 //identifier le nom de base de données
@@ -27,13 +38,7 @@ echo "Entreprise: " . $data['entreprise'] . '<br>';
 }
 }
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Resultat recherche</title>
-</head>
-<body>
+</p>
 
 </body>
 </html>

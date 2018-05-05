@@ -67,6 +67,17 @@ function changeImage6(element)
 x.setAttribute("src", v);
 }
 
+function changeImage7(element)
+{
+  var x = document.getElementById("image6");
+  var v = x.getAttribute("src");
+  if(v== "deconnexion.jpg")
+   { v= "deconnexion2.jpg";}
+  else
+  { v = "deconnexion.jpg";}
+
+x.setAttribute("src", v);
+}
 
 function like1(element)
 {

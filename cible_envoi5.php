@@ -18,8 +18,8 @@ $_SESSION['ID']=1;
 
  if ($db_found) { 
 
-$montexte= isset($_POST["montexte"]) ? $_POST["montexte"] : "";
-$sql = "INSERT INTO texte VALUES ('".$montexte."');";
+$description= isset($_POST["description"]) ? $_POST["description"] : "";
+$sql = "INSERT INTO description VALUES ('".$description."');";
 $result = mysqli_query($db_handle, $sql);
 }
 ?>

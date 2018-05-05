@@ -25,11 +25,18 @@
     <a href="notif.html"><img id="image3" src="notifications.png" alt="Notifications" width="98" height="57" onmouseenter="changeImage4(this)"/></a>
     <a href="messagerie.html"><img id="image4" src="messagerie.png" alt="Messagerie" width="98" height="57" onmouseenter="changeImage5(this)"/></a>
     <a href="emplois.html"><img id="image5" src="emplois.png" alt="Emplois" width="98" height="57" onmouseenter ="changeImage6(this)"/></a>
+    <a href="connexion.html"><img id="image6" src="deconnexion.jpg" alt="Deconnexion" width="98" height="57" onmouseenter ="changeImage7(this)"/></a>
+
 
    </div>
 
    <p class="gwd-p-13zt"><br> 
            </p>
+
+      <form action="cible_envoi4.php" method="post" enctype="multipart/form-data">
+     <input type="text" id="maRecherche" name="montexte" placeholder="Exprimez vous..."/ ><br />
+   <input type="submit" value ="Publier" id="send" class="exprimezvous"  />
+    </form>
 
    <form action="cible_envoi2.php" method="post" enctype="multipart/form-data">
       <input type="text" name="monfichier" id="document" placeholder="Choisissez un pdf..."/><br />
@@ -45,12 +52,6 @@
       <input type="text" name="mavideo" id="video"  placeholder="Choisissez une video..." /><br />
         <input type="submit" class="staiv3" id="send" value="Video"/>
       </form>
-    
-      <form action="cible_envoi4.php" method="post" enctype="multipart/form-data">
-     <input type="text" id="maRecherche" class="search" name="montexte"
-    placeholder="Exprimez vous..." >
-            <input type="submit" value ="Publier" class="exprimezvous"  />
-    </form>
 
          <svg class="gwd-rect-1rd7">
           <?php
@@ -126,20 +127,7 @@
   </p>
     
   </form>
-
-<<<<<<< HEAD
-    <form>
-     <input type="search" id="maRecherche" class="search" name="q2"
-    placeholder="Exprimez vous..." >
-    <p class="Publier">
-            <input type="submit" value ="Publier" class="exprimezvous"  />
-          </p>
-    </form>
-=======
->>>>>>> 816501c12d85e585347c1b39ee64bfc298dc3bdb
  
-    
-
     <span class="gwd-span-1iq8"><br class="">Mes messages</span>
  <div id="footer">Copyright &copy; 2018 net4work Properties<br/>
 <a href="mailto:net4work@gmail.com">net4work@gmail.com</a></div>

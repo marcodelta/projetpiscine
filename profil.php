@@ -65,6 +65,7 @@ mysqli_close($db_handle);
     <a href="notif.html"><img id="image3" src="notifications.png" alt="Notifications" width="98" height="57" onmouseenter="changeImage4(this)"/></a>
     <a href="messagerie.html"><img id="image4" src="messagerie.png" alt="Messagerie" width="98" height="57" onmouseenter="changeImage5(this)"/></a>
     <a href="emplois.html"><img id="image5" src="emplois.png" alt="Emplois" width="98" height="57" onmouseenter ="changeImage6(this)"/></a>
+      <a href="connexion.html"><img id="image6" src="deconnexion.jpg" alt="Deconnexion" width="98" height="57" onmouseenter ="changeImage7(this)"/></a>
 
    <p class="gwd-p-13zt">
   </p>
@@ -73,9 +74,28 @@ mysqli_close($db_handle);
   <strong class="gwd-strong-1tex">Mes vidéos</strong>
   <strong class="gwd-strong-kwsw"><?php echo $prenom, " ", $name ?>
 
-  <span class="gwd-span-hb4w"><?php echo $poste, " à ", $entreprise ?><br>Bonjour!<br>
-    <input type="submit" value="Envoyer" class="recherche"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></span>
-     <textarea name="description" class="description">Décrivez vous</textarea>
+  <span class="gwd-span-hb4w"><?php echo $poste, " à ", $entreprise ?><br>Bonjour!<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></span>
+    <form action="cible_envoi5.php" method="post" enctype="multipart/form-data">
+     <textarea name="description" class="description">
+        <?php
+          //identifier le nom de base de données
+        $database = "net4work";
+        //connecter l'utilisateur dans BDD
+        //votre serveur = localhost | votre login = root | votre mot de pass = ‘’ (rien)
+       $db_handle = mysqli_connect('localhost', 'root', '');
+        $db_found = mysqli_select_db($db_handle, $database);
+
+          $sql = "SELECT * FROM description";
+           $result = mysqli_query($db_handle,$sql);
+             while ($ligne = mysqli_fetch_assoc($result)) {
+          ?>
+          <?php echo ($ligne['texte']) ;?>
+           <?php
+        }
+        ?> 
+     </textarea>
+      <input type="submit" value="Envoyer" class="decrivezvous">
+    </form>
   <span class="gwd-span-1e6n"><?php echo "adresse mail : ", $mail?><br><br><br></span></strong>
   <strong class="gwd-strong-12j0">Mon activité <br>
   <?php if($_SESSION['admin'] == 1){

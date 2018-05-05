@@ -417,6 +417,23 @@ img{border: 0;
 
     }
 
+.decrivezvous{
+   position: absolute;
+   left: 15px;
+   top: 450px;
+   height: 30px;
+   width: 100px;
+   text-align: center;
+      font-family: Arial;
+      font-weight:bold;
+      font-size: 15px;
+      color: rgb(83, 137, 214);
+      background-image: none;
+      background-color: rgb(169, 196, 235);
+      border-color:(83, 137, 214);
+      border-radius: 10px;
+
+    }
      .gwd-p-13zu {
        position: absolute;
    left: 1200px;
@@ -641,4 +658,17 @@ text-align: center;
      position: absolute;
       left: 1350px;
       top: 650px;
+}
+
+.recherchephp{
+  width: 100%;
+  height: 100%;
+   text-align: center;
+      font-family: Arial;
+      font-weight:bold;
+      font-size: 15px;
+      color: rgb(83, 137, 214);
+      background-image: none;
+      background-color: rgb(169, 196, 235);
+      border-radius: 10px;
 }

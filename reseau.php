@@ -27,32 +27,20 @@
     <a href="notif.html"><img id="image3" src="notifications.png" alt="Notifications" width="98" height="57" onmouseenter="changeImage4(this)"/></a>
     <a href="messagerie.html"><img id="image4" src="messagerie.png" alt="Messagerie" width="98" height="57" onmouseenter="changeImage5(this)"/></a>
     <a href="emplois.html"><img id="image5" src="emplois.png" alt="Emplois" width="98" height="57" onmouseenter ="changeImage6(this)"/></a>
+      <a href="connexion.html"><img id="image6" src="deconnexion.jpg" alt="Deconnexion" width="98" height="57" onmouseenter ="changeImage7(this)"/></a>
    </div>
 
-<<<<<<< HEAD
 	<p class="gwd-p-13zt"></p>
 
    <p class="ajoutAmi"> 
    <a href="ajoutami.html" class="nvcontact"><br class=""> Ajouter un nouveau contact</a>
-=======
-  <p class="gwd-p-13zt">
-   
-  </p>
 
-   
->>>>>>> 816501c12d85e585347c1b39ee64bfc298dc3bdb
-  </p>
-
-  
   <span class="gwd-span-1iq8"><br class="">Mes messages</span>
     <form action="recherche.php" method="post">
       <input type="search" id="RechercheContact2" class="search" name="q"
     placeholder="Rechercher un contact" required > 
-<<<<<<< HEAD
-    <input type="submit" value="Envoyer" class="recherche2">
-=======
+
      <input type="submit" value="Envoyer" class="recherche">
->>>>>>> 816501c12d85e585347c1b39ee64bfc298dc3bdb
   </form>
 
   <span class="gwd-span-1iq9">
@@ -90,20 +78,11 @@ mysqli_close($db_handle);
   ?>
 
     <br class=""></span>
-<<<<<<< HEAD
-  <span class="gwd-span-1iq10"><br>Afficher </span>
-
-  <p class="gwd-p-13zu"><br><br> 
-    Amis<br><br>
-    Contact
-  </p> 
-=======
   <span class="gwd-span-1iq10"><br>Afficher<br><br>
    Amis<br><br>
   Contact <br><br><br>
  <a href="ajoutami.html" class="nvcontact"> Ajouter un nouveau contact</a>
  </span>
->>>>>>> 816501c12d85e585347c1b39ee64bfc298dc3bdb
     <input type="checkbox" name="Amis" class="Amis"> <br>
   <input type="checkbox" name="Contacts" class="Contacts"> <br>
   
