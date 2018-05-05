@@ -61,10 +61,12 @@
        $db_handle = mysqli_connect('localhost', 'root', '');
         $db_found = mysqli_select_db($db_handle, $database);
 
-          $sql = "SELECT * FROM photo";
-          $sql2="SELECT* FROM video";
-           $sql3 = "SELECT * FROM fichier";
-          $sql4 ="SELECT* FROM texte";
+          $sql = "SELECT * FROM photo,utilisateur";
+          $sql2="SELECT* FROM fichier,utilisateur";
+           $sql3 = "SELECT * FROM video,utilisateur";
+          $sql4 ="SELECT* FROM texte,utilisateur ";
+
+          
 
         $result = mysqli_query($db_handle,$sql);
         $result2 = mysqli_query($db_handle,$sql2);
@@ -82,21 +84,22 @@
        <embed class="doc" width="300" height="300" type="application/pdf" src="<?php echo ($ligne['lien']) ;?>"/></embed>
         <?php
         }
+
         while ($ligne = mysqli_fetch_assoc($result3)) {
           ?>
            <div class="video">
-           <object width="250" height="250">
-          <param name="movie" value="<?php echo ($ligne['lien']) ;?>"></param>
-          <param name="wmode" value="transparent"></param>
-          <embed src="<?php echo ($ligne['lien']) ;?>" type="application/x-shockwave-flash" wmode="transparent" width="250" height="250"></embed>
-          </object>
-          </div>
+        <object type="application/x-shockwave-flash" width="300" height="222" data="<?php echo ($ligne['lien']) ;?>">
+          <param name="movie" value="<?php echo ($ligne['lien']) ;?>" />
+          <param name="wmode" value="transparent" />
+         Vous n'avez pas de navigateur moderne, ni Flash installé...
+        </object>
+        </div>
 
         <?php
         }
         while ($ligne = mysqli_fetch_assoc($result4)) {
           ?>
-          <p class="texte"><?php echo ($ligne['texte']) ;?></p>
+          <p class="texte"><?php echo ($ligne['texte']) ;?><br><br></p>
         <?php
         }
         ?>

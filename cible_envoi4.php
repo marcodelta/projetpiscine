@@ -23,6 +23,5 @@ $_SESSION['ID']=1;
 $texte= isset($_POST["montexte"]) ? $_POST["montexte"] : "";
 $sql = "INSERT INTO texte VALUES ('".$texte."');";
 $result = mysqli_query($db_handle, $sql);
-echo($sql);
 }
 ?>
