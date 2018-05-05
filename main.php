@@ -121,10 +121,22 @@
       <form action="recherche.php" method="post">
     <input type="search" id="RechercheContact" class="search" name="q"
     placeholder="Rechercher un contact..."  >
+    <p class="EnvoyerContact">
     <input type="submit" value="Envoyer" class="recherche">
+  </p>
     
   </form>
 
+<<<<<<< HEAD
+    <form>
+     <input type="search" id="maRecherche" class="search" name="q2"
+    placeholder="Exprimez vous..." >
+    <p class="Publier">
+            <input type="submit" value ="Publier" class="exprimezvous"  />
+          </p>
+    </form>
+=======
+>>>>>>> 816501c12d85e585347c1b39ee64bfc298dc3bdb
  
     
 
