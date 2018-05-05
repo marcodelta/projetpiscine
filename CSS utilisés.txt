@@ -18,14 +18,30 @@ footer --- footer du main
 EnvoyerContact --- Bouton Envoyer sous recherche contact
 Publier --- Publier son statut
 
-RESEAU
+
+VOUS
 
 gwd-span-14na --- Carré documents à gauche
 gwd-span-45s9 --- Carré photos à gauche
 gwd-strong-1tex --- Carré vidéos à gauche
-gwd-strong-kwsw --- Carré profin central
+gwd-strong-kwsw --- Carré profil central
 gwd-span-hb4w --- Carré info dans carré central
-BoutonEnvoyer2 --- Bouton pour envoyer les infos
+recherche --- Bouton pour envoyer les infos
+description --- second carré profil central
+gwd-span-1e6n --- ?????
+gwd-strong-12j0 --- mon activité
+
+
+RESEAU
+
+nvcontact --- pour ajouter un ami
+recherche2 --- bouton pour rechercher un contact
+gwd-span-1iq9 --- grand carré central
+gwd-span-1iq10 --- Carré ami/contact à droite
+gwd-p-13zu --- Zone texte ami/contact à droite
+Ami --- carré à cocher pour Ami
+Contact --- carré à cocher pour contact
+
 
 
 

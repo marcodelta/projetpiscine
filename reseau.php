@@ -31,7 +31,7 @@
 
 	<p class="gwd-p-13zt"></p>
 
-   <p class="ajoutAmi"><br>  
+   <p class="ajoutAmi"> 
    <a href="ajoutami.html" class="nvcontact"><br class=""> Ajouter un nouveau contact</a>
   </p>
 
@@ -40,7 +40,7 @@
     <form action="recherche.php" method="post">
       <input type="search" id="RechercheContact2" class="search" name="q"
     placeholder="Rechercher un contact" required > 
-    <input type="submit" value="Envoyer" class="recherche">
+    <input type="submit" value="Envoyer" class="recherche2">
   </form>
 
   <span class="gwd-span-1iq9">
@@ -78,9 +78,9 @@ mysqli_close($db_handle);
   ?>
 
     <br class=""></span>
-  <span class="gwd-span-1iq10">Afficher<br class="">  </span>
+  <span class="gwd-span-1iq10"><br>Afficher </span>
 
-  <p class="gwd-p-13zu"><br>  
+  <p class="gwd-p-13zu"><br><br> 
     Amis<br><br>
     Contact
   </p> 

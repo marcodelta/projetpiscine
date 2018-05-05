@@ -71,15 +71,13 @@ mysqli_close($db_handle);
   <strong class="gwd-span-14na">Mes documents</strong>
   <strong class="gwd-span-45s9"> Mes photos</strong>
   <strong class="gwd-strong-1tex">Mes vidéos</strong>
-  <strong class="gwd-strong-kwsw"><?php echo $prenom, " ", $name ?><br>
+  <strong class="gwd-strong-kwsw"><?php echo $prenom, " ", $name ?>
 
-  <span class="gwd-span-hb4w"><?php echo $poste, " à ", $entreprise ?><br>Bonjour!
+  <span class="gwd-span-hb4w"><?php echo $poste, " à ", $entreprise ?>Bonjour!
 
-     <p class="BoutonEnvoyer2">
-    <input type="submit" value="Envoyer" class="recherche"></span></p>
-
+    <input type="submit" value="Envoyer" class="recherche"></span>
      <textarea name="description" class="description">Décrivez vous</textarea>
-  <span class="gwd-span-1e6n"><?php echo "adresse mail : ", $mail ?><br><br><br></span></strong>
+  <span class="gwd-span-1e6n"><?php echo "adresse mail : ", $mail ?></span></strong>
   <strong class="gwd-strong-12j0">Mon activité <br>
   <?php if($_SESSION['admin'] == 1){
     echo "<a href='admin.php'>Accéder au pannel admin</a>";
