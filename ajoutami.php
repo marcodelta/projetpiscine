@@ -22,19 +22,11 @@
 			$data = mysqli_fetch_assoc($result);
 			$idu = $data['iduser'];
 
-<<<<<<< HEAD
 			$sql2 = "INSERT INTO amis (iduser, idami) VALUES ('".$_SESSION['ID']."', '".$idu."')";
 			$req = mysqli_query($db_handle,$sql2);
 			$sql3 = "INSERT INTO amis (iduser, idami) VALUES ('".$idu."','".$_SESSION['ID']."')";
 			$req1 = mysqli_query($db_handle,$sql3);
 			header("Location:reseau.php");
-=======
-			while($data = mysqli_fetch_assoc($req)) {
-					echo  $dat['prenom'] . " ";
-					echo  $dat['nom'] . " ";
-					echo  $dat['poste'] . " ";
-					echo  $dat['entreprise'] . '<br>';
->>>>>>> 816501c12d85e585347c1b39ee64bfc298dc3bdb
 			}
 
 		elseif($prenom != "") {
