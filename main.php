@@ -52,7 +52,7 @@
             <input type="submit" value ="Publier" class="exprimezvous"  />
     </form>
 
-         <svg data-gwd-shape="rectangle" class="gwd-rect-1rd7">
+         <svg class="gwd-rect-1rd7">
           <?php
           //identifier le nom de base de données
         $database = "net4work";
@@ -76,18 +76,18 @@
         while ($ligne = mysqli_fetch_assoc($result)) {
           ?>
           <img class="image" width="300" height="300" src=" <?php echo ($ligne['lien']) ;?>"/>
-          <img id="like1" src="like.png" alt="like" width="100" height="40"  onclick ="like1(this)" >
-         <img id="comment1" src="comment.png" alt="comment" width="100" height="40">
-          <img id="share1" src="share.png" alt="share" width="100" height="40">
+          <img id="like1" src="like.png" alt="like1" width="100" height="40" onclick="like1(this)"/ >
+         <img id="comment1" src="comment.png" alt="comment1" width="100" height="40">
+          <img id="share1" src="share.png" alt="share1" width="100" height="40">
         <?php
         }
 
         while ($ligne = mysqli_fetch_assoc($result2)) {
           ?>
-       <embed class="doc" width="300" height="300" type="application/pdf" src="<?php echo ($ligne['lien']) ;?>"/></embed>    
-      <img id="like2" src="like.png" alt="like" width="100" height="40" onclick ="like2(this)">
-      <img id="comment2" src="comment.png" alt="comment" width="100" height="40">
-      <img id="share2" src="share.png" alt="share" width="100" height="40">
+       <embed class="doc" width="300" height="300" type="application/pdf" src="<?php echo ($ligne['lien']) ;?>"/>  
+      <img id="like2" src="like.png" alt="like2" width="100" height="40" onclick ="like2(this)"/>
+      <img id="comment2" src="comment.png" alt="comment2" width="100" height="40">
+      <img id="share2" src="share.png" alt="share2" width="100" height="40">
         <?php
         }
 
@@ -110,9 +110,9 @@
         while ($ligne = mysqli_fetch_assoc($result4)) {
           ?>
           <p class="texte"><?php echo ($ligne['texte']) ;?></p>
-        <img id="like4" src="like.png" alt="like" width="100" height="40" onclick ="like3(this)">
-      <img id="comment4" src="comment.png" alt="comment" width="100" height="40">
-  <img id="share4" src="share.png" alt="share" width="100" height="40"><br><br>
+        <img id="like4" src="like.png" alt="like4" width="100" height="40" onclick ="like3(this)">
+      <img id="comment4" src="comment.png" alt="comment4" width="100" height="40">
+  <img id="share4" src="share.png" alt="share4" width="100" height="40"><br><br>
         <?php
         }
         ?> 

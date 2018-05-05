@@ -51,7 +51,7 @@ img{border: 0;
     .gwd-rect-1rd7 {
       background-color: rgb(169, 196, 235);
       position: absolute;
-      width: 1100px;
+      width: 1050px;
       height: 440px;
       left: 400px;
       top: 275px;
@@ -627,18 +627,18 @@ text-align: center;
 
 #like4{
      position: absolute;
-      left: 1150px;
+      left: 1100px;
       top: 650px;
 }
 
 #comment4{
      position: absolute;
-      left: 1250px;
+      left: 1200px;
       top: 650px;
 }
 
 #share4{
      position: absolute;
-      left: 1350px;
+      left: 1300px;
       top: 650px;
 }
