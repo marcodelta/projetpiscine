@@ -13,65 +13,48 @@
 		$prenom = isset($_POST["prenom"]) ? $_POST["prenom"] : "";
 		$nom = isset($_POST["nom"]) ? $_POST["nom"] : "";
 		$mail = isset($_POST["mail"]) ? $_POST["mail"] : "";
-		$poste = isset($_POST["poste"]) ? $_POST["poste"] : "";
-		$entreprise = isset($_POST["entreprise"]) ? $_POST["entreprise"] : "";
-
-		$test = 0;
 
 
-		if(($prenom != "") OR ($nom != "") OR ($poste != "") OR ($entreprise != "") OR ($mail != ""))
-		{
-			$sql = "SELECT prenom, nom, poste, entreprise FROM utilisateur WHERE ";
-		
-			if ($prenom != "") {
-				$sql .= "prenom LIKE '%$prenom%'";
-				$test = 1;
-			}
-			if($nom != "" ) {
-				if($test == 1){
-					$sql .= "AND nom LIKE '%$nom%' ";
-				}
-				else {
-					$sql .= "nom LIKE '%$nom%' ";
-					$test = 1;
-				}
-			}
-			if ($poste != "") {
-				if($test == 1){
-					$sql .= "AND poste LIKE '%$poste%' ";
-				}
-				else {
-					$sql .= "poste LIKE '%$poste%' ";
-					$test = 1;
-				}
-			}
-			if($entreprise != "" ) {
-				if($test == 1){
-					$sql .= "AND entreprise LIKE '%$entreprise%' ";
-				}
-				else {
-					$sql .= "entreprise LIKE '%$entreprise%' ";
-					$test = 1;
-				}
-			}
 
-			if($mail != "") {
+		if($mail != "") {
 			$sql1 = "SELECT iduser FROM connection WHERE email LIKE '%$mail%'";
 			$result = mysqli_query($db_handle,$sql1);
 			$data = mysqli_fetch_assoc($result);
 			$idu = $data['iduser'];
-			$sql = "SELECT prenom, nom, poste, entreprise FROM utilisateur WHERE iduser LIKE '%$idu%'";
-			}
 
-			$req = mysqli_query($db_handle,$sql);
-
+<<<<<<< HEAD
+			$sql2 = "INSERT INTO amis (iduser, idami) VALUES ('".$_SESSION['ID']."', '".$idu."')";
+			$req = mysqli_query($db_handle,$sql2);
+			$sql3 = "INSERT INTO amis (iduser, idami) VALUES ('".$idu."','".$_SESSION['ID']."')";
+			$req1 = mysqli_query($db_handle,$sql3);
+			header("Location:reseau.php");
+=======
 			while($data = mysqli_fetch_assoc($req)) {
 					echo  $dat['prenom'] . " ";
 					echo  $dat['nom'] . " ";
 					echo  $dat['poste'] . " ";
 					echo  $dat['entreprise'] . '<br>';
+>>>>>>> 816501c12d85e585347c1b39ee64bfc298dc3bdb
 			}
-		}
+
+		elseif($prenom != "") {
+			if($nom != "") {
+				$sql4 = "SELECT iduser FROM utilisateur WHERE nom LIKE '%$nom%' AND prenom LIKE '%$prenom%'";
+				$req2 = mysqli_query($db_handle,$sql4);
+				$data = mysqli_fetch_assoc($req2);
+				$idu = $data['iduser'];
+				echo $idu;
+				echo "yo";
+				echo $_SESSION['ID'];
+
+				
+				$sql2 = "INSERT INTO amis (iduser, idami) VALUES ('".$_SESSION['ID']."', '".$idu."')";
+				$req = mysqli_query($db_handle,$sql2);
+				$sql3 = "INSERT INTO amis (iduser, idami) VALUES ('".$idu."','".$_SESSION['ID']."')";
+				$req1 = mysqli_query($db_handle,$sql3);
+				header("Location:reseau.php");
+					}
+				}		
 		else {
 			header("Location:ajoutami.html");
 		}
