@@ -22,6 +22,5 @@ $_SESSION['ID']=1;
 $video= isset($_POST["mavideo"]) ? $_POST["mavideo"] : "";
 $sql = "INSERT INTO video VALUES ('".$video."');";
 $result = mysqli_query($db_handle, $sql);
-echo($sql);
 }
 ?>

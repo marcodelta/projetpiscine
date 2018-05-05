@@ -20,6 +20,5 @@ $_SESSION['ID']=1;
 $fichier= isset($_POST["monfichier"]) ? $_POST["monfichier"] : "";
 $sql = "INSERT INTO fichier VALUES ('".$fichier."');";
 $result = mysqli_query($db_handle, $sql);
-echo($sql);
 }
 ?>

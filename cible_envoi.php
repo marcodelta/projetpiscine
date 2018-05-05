@@ -21,7 +21,6 @@ $_SESSION['ID']=1;
 $image= isset($_POST["monimage"]) ? $_POST["monimage"] : "";
 $sql = "INSERT INTO photo VALUES ('".$image."');";
 $result = mysqli_query($db_handle, $sql);
-echo($sql);
 }
 
 ?>
