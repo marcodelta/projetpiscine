@@ -2,36 +2,45 @@
 <head>
 <title>Ajouter un ami</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="ajoutami.css" rel="stylesheet" type="text/css" />
 <!--<link href="prime.css" rel="stylesheet" type="text/css" />-->
 </head>
 <body>
-<form action="ajoutami.php" method="post">
 
-<h1 id="logo1">
+<div id="FondBleu">
+
+	<form action="ajoutami.php" method="post">
+
+	<div id="logo"><dd>
        <img src="logo.png" alt="Prime Properties" width="320" height="218" />
-  </h1>
 
-<div id="Recherche">
-<h2>Recherche de membres :</h2><br/><br/>
-<tr>
-<td>Prénom:<br/><br/></td>
-<td><input type="text" name="prenom"/><br/><br/></td>
-</tr>
-<tr>
-<td>Nom:<br/><br/></td>
-<td><input type="text" name="nom"/><br/><br/></td>
-</tr>
-<tr>
-<td>Adresse mail:<br/><br/></td>
-<td><input type="email" name="mail"/><br/><br/></td>
-</tr>
-<tr>
-<td colspan="2">
-<input type="submit" value="Valider"; />
-</td>
-</tr>
+	<div id="Recherche">
+		<table>
+		<h2><dd>Recherche de membres :</h2><br/><br/>
+		<tr>
+		<td class="formulaire"><dd>Prénom:<br/><br/></td>
+		<td><dd><input type="text" name="prenom"/><br/><br/></td>
+		</tr>
+		<tr>
+		<td class="formulaire"><dd>Nom:<br/><br/></td>
+		<td><dd><input type="text" name="nom"/><br/><br/></td>
+		</tr>
+		<tr>
+		<td class="formulaire"><dd>Adresse mail:<br/><br/></td>
+		<td><dd><input type="email" name="mail"/><br/><br/></td>
+		</tr>
+		<tr>
+		<td colspan="2"><dd>
+		<input type="submit" value="Valider"; />
+		</td>
+		</tr>
+	</table>
+	<br><div id="footer"><dd>Copyright &copy; 2018 net4work Properties <a href="mailto:net4work@gmail.com">net4work@gmail.com</a></div>
+	</div>
+	</form>
+
 </div>
-</form>
+</div>
 
 <!--
 <div id="texte">
@@ -45,6 +54,5 @@
 
 <div id="error">
 </div>
-<div id="footer">Copyright &copy; 2018 net4work Properties <a href="mailto:net4work@gmail.com">net4work@gmail.com</a></div>
 </body>
 </html>
