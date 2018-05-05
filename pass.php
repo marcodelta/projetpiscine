@@ -34,6 +34,12 @@ $_SESSION['ID']=1;
 		$requete = mysqli_query($db_handle,$sql);
 		$data = mysqli_fetch_assoc($requete);
 		$_SESSION['ID']=$data['iduser'];
+
+		$sql2 = "SELECT grade FROM utilisateur WHERE iduser LIKE '".$_SESSION['ID']."' ";
+  		$requete2 = mysqli_query($db_handle,$sql2);
+ 		$data2 = mysqli_fetch_assoc($requete2);
+ 		$_SESSION['admin'] = $data2['grade'];
+ 		
 		header("Location:main.php");
 	}
 	else {

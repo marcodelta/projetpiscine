@@ -79,6 +79,13 @@ mysqli_close($db_handle);
      <textarea name="description" class="description">Décrivez vous</textarea>
   <span class="gwd-span-1e6n"><?php echo "adresse mail : ", $mail?><br><br><br></span></strong>
   <strong class="gwd-strong-12j0">Mon activité</strong>
+  <span class="gwd-span-1e6n"><?php echo "adresse mail : ", $mail ?><br><br><br></span></strong>
+  <strong class="gwd-strong-12j0">Mon activité <br>
+  <?php if($_SESSION['admin'] == 1){
+    echo "<a href='admin.php'>Accéder au pannel admin</a>";
+  }
+  ?>
+  </strong>
 
  <div id="footer">Copyright &copy; 2018 net4work Properties<br/>
 <a href="mailto:net4work@gmail.com">net4work@gmail.com</a></div>
