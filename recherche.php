@@ -18,7 +18,6 @@ $requete="SELECT* FROM utilisateur WHERE nom LIKE '%$recherche%' OR prenom LIKE 
 $resultat = mysqli_query($db_handle,$requete);
 
 while ($data = mysqli_fetch_assoc($resultat)){
-echo "ID: " . $data['iduser'] . '<br>';
 echo "Prenom: " . $data['prenom'] . '<br>';
 echo "Nom: " . $data['nom'] . '<br>';
 echo "Poste: " . $data['poste'] . '<br>';

@@ -15,12 +15,13 @@ $_SESSION['ID']=1;
  $db_handle = mysqli_connect('localhost', 'root', '');
  $db_found = mysqli_select_db($db_handle, $database);
  //si la BDD existe, faire le traitement
- 
+
+
+
  if ($db_found) { 
 
-$image= isset($_POST["monimage"]) ? $_POST["monimage"] : "";
-$sql = "INSERT INTO photo VALUES ('".$image."');";
+$texte= isset($_POST["montexte"]) ? $_POST["montexte"] : "";
+$sql = "INSERT INTO texte VALUES ('".$texte."');";
 $result = mysqli_query($db_handle, $sql);
 }
-
 ?>

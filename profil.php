@@ -64,7 +64,7 @@ mysqli_close($db_handle);
     <a href="reseau.php"><img id="image2" src="reseau.png" alt="Reseau" width="98" height="57" onmouseenter ="changeImage3(this)"/></a>
     <a href="notif.html"><img id="image3" src="notifications.png" alt="Notifications" width="98" height="57" onmouseenter="changeImage4(this)"/></a>
     <a href="messagerie.html"><img id="image4" src="messagerie.png" alt="Messagerie" width="98" height="57" onmouseenter="changeImage5(this)"/></a>
-    <a href='emplois.html'><img id="image5" src="emplois.png" alt="Emplois" width="98" height="57" onmouseenter ="changeImage6(this)"/></a>
+    <a href="emplois.html"><img id="image5" src="emplois.png" alt="Emplois" width="98" height="57" onmouseenter ="changeImage6(this)"/></a>
 
    <p class="gwd-p-13zt">
   </p>
@@ -75,9 +75,18 @@ mysqli_close($db_handle);
 
   <span class="gwd-span-hb4w"><?php echo $poste, " à ", $entreprise ?>Bonjour!
 
+<<<<<<< HEAD
     <input type="submit" value="Envoyer" class="recherche"></span>
      <textarea name="description" class="description">Décrivez vous</textarea>
   <span class="gwd-span-1e6n"><?php echo "adresse mail : ", $mail ?></span></strong>
+=======
+  <span class="gwd-span-hb4w"><?php echo $poste, " à ", $entreprise ?><br>Bonjour!<br>
+    <input type="submit" value="Envoyer" class="recherche"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></span>
+     <textarea name="description" class="description">Décrivez vous</textarea>
+  <span class="gwd-span-1e6n"><?php echo "adresse mail : ", $mail?><br><br><br></span></strong>
+  <strong class="gwd-strong-12j0">Mon activité</strong>
+  <span class="gwd-span-1e6n"><?php echo "adresse mail : ", $mail ?><br><br><br></span></strong>
+>>>>>>> 816501c12d85e585347c1b39ee64bfc298dc3bdb
   <strong class="gwd-strong-12j0">Mon activité <br>
   <?php if($_SESSION['admin'] == 1){
     echo "<a href='admin.php'>Accéder au pannel admin</a>";

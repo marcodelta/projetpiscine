@@ -1,6 +1,3 @@
-<?php
-$exprimez = isset($_POST["q2"]) ? $_POST["q2"] : "";
-?>
 
 <!DOCTYPE html>
 <!-- Sources:  -->
@@ -31,19 +28,93 @@ $exprimez = isset($_POST["q2"]) ? $_POST["q2"] : "";
 
    </div>
 
-   <form action="cible_envoi.php" method="post" enctype="multipart/form-data">
    <p class="gwd-p-13zt"><br> 
-        <input type="file" name="monfichier" id="document" /><br />
-        <input type="submit" class="staiv" id="send" />
-         <svg data-gwd-shape="rectangle" class="gwd-rect-1rd7">
-          <?php echo $exprimez ?>
-          </svg> 
-   <!--<embed name="mon fichier" class="pdf" width=300 height=300 type='application/pdf'/>-->
-    
-  </p>
-  </form>
+           </p>
 
-  
+   <form action="cible_envoi2.php" method="post" enctype="multipart/form-data">
+      <input type="text" name="monfichier" id="document" placeholder="Choisissez un pdf..."/><br />
+        <input type="submit" class="staiv" id="send" value="Document" />
+      </form>
+
+       <form action="cible_envoi.php" method="post" enctype="multipart/form-data">
+      <input type="text" name="monimage" id="photo" placeholder="Choisissez une image..."/><br />
+        <input type="submit" class="staiv2" id="send" value="Image" />
+      </form>
+
+       <form action="cible_envoi3.php" method="post" enctype="multipart/form-data">
+      <input type="text" name="mavideo" id="video"  placeholder="Choisissez une video..." /><br />
+        <input type="submit" class="staiv3" id="send" value="Video"/>
+      </form>
+    
+      <form action="cible_envoi4.php" method="post" enctype="multipart/form-data">
+     <input type="text" id="maRecherche" class="search" name="montexte"
+    placeholder="Exprimez vous..." >
+            <input type="submit" value ="Publier" class="exprimezvous"  />
+    </form>
+
+         <svg data-gwd-shape="rectangle" class="gwd-rect-1rd7">
+          <?php
+          //identifier le nom de base de données
+        $database = "net4work";
+        //connecter l'utilisateur dans BDD
+        //votre serveur = localhost | votre login = root | votre mot de pass = ‘’ (rien)
+       $db_handle = mysqli_connect('localhost', 'root', '');
+        $db_found = mysqli_select_db($db_handle, $database);
+
+          $sql = "SELECT * FROM photo,utilisateur";
+          $sql2="SELECT* FROM fichier,utilisateur";
+           $sql3 = "SELECT * FROM video,utilisateur";
+          $sql4 ="SELECT* FROM texte,utilisateur ";
+
+          
+
+        $result = mysqli_query($db_handle,$sql);
+        $result2 = mysqli_query($db_handle,$sql2);
+        $result3= mysqli_query($db_handle,$sql3);
+        $result4 = mysqli_query($db_handle,$sql4);
+
+        while ($ligne = mysqli_fetch_assoc($result)) {
+          ?>
+          <img class="image" width="200" height="200" src=" <?php echo ($ligne['lien']) ;?>"/>
+          <img id="like1" src="like.png" alt="like" width="100" height="40">
+         <img id="comment1" src="comment.png" alt="comment" width="100" height="40">
+          <img id="share1" src="share.png" alt="share" width="100" height="40">
+        <?php
+        }
+
+        while ($ligne = mysqli_fetch_assoc($result2)) {
+          ?>
+       <embed class="doc" width="300" height="300" type="application/pdf" src="<?php echo ($ligne['lien']) ;?>"/></embed>    
+      <img id="like2" src="like.png" alt="like" width="100" height="40">
+      <img id="comment2" src="comment.png" alt="comment" width="100" height="40">
+      <img id="share2" src="share.png" alt="share" width="100" height="40">
+        <?php
+        }
+
+        while ($ligne = mysqli_fetch_assoc($result3)) {
+          ?>
+           <div class="video">
+        <object type="application/x-shockwave-flash" width="300" height="222" data="<?php echo ($ligne['lien']) ;?>">
+          <param name="movie" value="<?php echo ($ligne['lien']) ;?>" />
+          <param name="wmode" value="transparent" />
+         Vous n'avez pas de navigateur moderne, ni Flash installé...
+        </object>
+        </div>
+         <img id="like3" src="like.png" alt="like" width="100" height="40">
+        <img id="comment3" src="comment.png" alt="comment" width="100" height="40">
+        <img id="share3" src="share.png" alt="share" width="100" height="40">
+        <?php
+        }
+        while ($ligne = mysqli_fetch_assoc($result4)) {
+          ?>
+          <p class="texte"><?php echo ($ligne['texte']) ;?>
+        <img id="like4" src="like.png" alt="like" width="100" height="40">
+      <img id="comment4" src="comment.png" alt="comment" width="100" height="40">
+  <img id="share4" src="share.png" alt="share" width="100" height="40"><br><br></p>
+        <?php
+        }
+        ?> 
+          </svg> 
 
       <form action="recherche.php" method="post">
     <input type="search" id="RechercheContact" class="search" name="q"
@@ -54,6 +125,7 @@ $exprimez = isset($_POST["q2"]) ? $_POST["q2"] : "";
     
   </form>
 
+<<<<<<< HEAD
     <form>
      <input type="search" id="maRecherche" class="search" name="q2"
     placeholder="Exprimez vous..." >
@@ -61,6 +133,8 @@ $exprimez = isset($_POST["q2"]) ? $_POST["q2"] : "";
             <input type="submit" value ="Publier" class="exprimezvous"  />
           </p>
     </form>
+=======
+>>>>>>> 816501c12d85e585347c1b39ee64bfc298dc3bdb
  
     
 

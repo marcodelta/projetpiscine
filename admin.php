@@ -60,10 +60,13 @@ mysqli_close($db_handle);
 </head>
 <body>
 <form action="inscription.php" method="post">
-
+<script type="text/javascript" src="myScript.js">
+  
+</script>
 <h1 id="logo2">
        <img src="logo.png" alt="Prime Properties" width="250" height="180" />
   </h1>
+
 
 <div id="inscription" width="300" height="300">
 </div>
@@ -75,6 +78,7 @@ mysqli_close($db_handle);
 </div>
 
 <div id="champ1">
+
 <table>
 <tr>
 <td class="inscription_col_gauche">Adresse mail:</td>
@@ -97,6 +101,7 @@ mysqli_close($db_handle);
 <td></td><td></td>
 <td colspan="2">
 <input type="submit" value="Valider" />
+<br><a href="main.php"><img id="mainadmin" src="accueil.png" alt="Accueil" width="98" height="57" onmouseenter ="changeImage(this)"/></a>
 </td>
 </tr>
 </form>
@@ -121,6 +126,7 @@ mysqli_close($db_handle);
 </div>
 
 <div id="error">
+
 </div>
 <div id="footer">Copyright &copy; 2018 net4work Properties <a href="mailto:net4work@gmail.com">net4work@gmail.com</a></div>
 </form>

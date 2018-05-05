@@ -65,7 +65,7 @@
 
 			$req = mysqli_query($db_handle,$sql);
 
-			while($dat = mysqli_fetch_assoc($req)) {
+			while($data = mysqli_fetch_assoc($req)) {
 					echo  $dat['prenom'] . " ";
 					echo  $dat['nom'] . " ";
 					echo  $dat['poste'] . " ";
