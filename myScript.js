@@ -66,3 +66,43 @@ function changeImage6(element)
 
 x.setAttribute("src", v);
 }
+
+
+function like1(element)
+{
+  var x = document.getElementById("like1");
+  var v = x.getAttribute("src");
+  if(v== "like.png")
+   { v= "like2.png";}
+  else
+  { v = "like.png";}
+
+x.setAttribute("src", v);
+}
+
+
+function like2(element)
+{
+  var x = document.getElementById("like2");
+  var v = x.getAttribute("src");
+  if(v== "like.png")
+   { v= "like2.png";}
+  else
+  { v = "like.png";}
+
+x.setAttribute("src", v);
+}
+
+
+function like4(element)
+{
+  var x = document.getElementById("like4");
+  var v = x.getAttribute("src");
+  if(v== "like.png")
+   { v= "like2.png";}
+  else
+  { v = "like.png";}
+
+x.setAttribute("src", v);
+}
+
