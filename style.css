@@ -562,3 +562,20 @@ text-align: center;
       left: 1400px;
       top: 350px;
     }
+#like1{
+     position: absolute;
+      left: 450px;
+      top: 700px;
+}
+
+#comment1{
+     position: absolute;
+      left: 500px;
+      top: 700px;
+}
+
+#share1{
+     position: absolute;
+      left: 550px;
+      top: 700px;
+}
