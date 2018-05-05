@@ -75,8 +75,8 @@
 
         while ($ligne = mysqli_fetch_assoc($result)) {
           ?>
-          <img class="image" width="200" height="200" src=" <?php echo ($ligne['lien']) ;?>"/>
-          <img id="like1" src="like.png" alt="like" width="100" height="40">
+          <img class="image" width="300" height="300" src=" <?php echo ($ligne['lien']) ;?>"/>
+          <img id="like1" src="like.png" alt="like" width="100" height="40"  onclick ="like1(this)" >
          <img id="comment1" src="comment.png" alt="comment" width="100" height="40">
           <img id="share1" src="share.png" alt="share" width="100" height="40">
         <?php
@@ -85,7 +85,7 @@
         while ($ligne = mysqli_fetch_assoc($result2)) {
           ?>
        <embed class="doc" width="300" height="300" type="application/pdf" src="<?php echo ($ligne['lien']) ;?>"/></embed>    
-      <img id="like2" src="like.png" alt="like" width="100" height="40">
+      <img id="like2" src="like.png" alt="like" width="100" height="40" onclick ="like2(this)">
       <img id="comment2" src="comment.png" alt="comment" width="100" height="40">
       <img id="share2" src="share.png" alt="share" width="100" height="40">
         <?php
@@ -93,8 +93,9 @@
 
         while ($ligne = mysqli_fetch_assoc($result3)) {
           ?>
+          <!--
            <div class="video">
-        <object type="application/x-shockwave-flash" width="300" height="222" data="<?php echo ($ligne['lien']) ;?>">
+        <object type="application/x-shockwave-flash" width="300" height="300" data="<?php echo ($ligne['lien']) ;?>">
           <param name="movie" value="<?php echo ($ligne['lien']) ;?>" />
           <param name="wmode" value="transparent" />
          Vous n'avez pas de navigateur moderne, ni Flash installé...
@@ -102,15 +103,16 @@
         </div>
          <img id="like3" src="like.png" alt="like" width="100" height="40">
         <img id="comment3" src="comment.png" alt="comment" width="100" height="40">
-        <img id="share3" src="share.png" alt="share" width="100" height="40">
+        <img id="share3" src="share.png" alt="share" width="100" height="40">-->
         <?php
         }
+
         while ($ligne = mysqli_fetch_assoc($result4)) {
           ?>
-          <p class="texte"><?php echo ($ligne['texte']) ;?>
-        <img id="like4" src="like.png" alt="like" width="100" height="40">
+          <p class="texte"><?php echo ($ligne['texte']) ;?></p>
+        <img id="like4" src="like.png" alt="like" width="100" height="40" onclick ="like3(this)">
       <img id="comment4" src="comment.png" alt="comment" width="100" height="40">
-  <img id="share4" src="share.png" alt="share" width="100" height="40"><br><br></p>
+  <img id="share4" src="share.png" alt="share" width="100" height="40"><br><br>
         <?php
         }
         ?> 
